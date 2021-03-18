@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { CategoryPageComponent } from './views/category-page/category-page.component';
 
 const routes: Routes = [
-  { path: 'category', component: CategoryPageComponent }
+  { path: '', component: CategoryPageComponent },
+  { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 
 @NgModule({
