@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './components/map/map.component';
+import { CategoryPageComponent } from './views/category-page/category-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    MapComponent,
+    CategoryPageComponent
   ],
   imports: [
     BrowserModule,
