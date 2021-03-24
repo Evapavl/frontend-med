@@ -1,3 +1,39 @@
-.map {
-  height: 400px;
+.container {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.container__header {
+  background: #0097A7;
+  padding: 10px;
+}
+
+.header__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container__search {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.search__input {
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+}
+
+.search__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.container__map {
+  z-index: 1;
+  height: 100%;
+  position: relative;
 }
