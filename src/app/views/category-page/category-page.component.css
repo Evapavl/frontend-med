@@ -10,32 +10,32 @@
 
 .container__body {
   padding-top: 40px;
-  max-width: 500px;
+  width: 320px;
   margin: 0 auto;
   text-align: center;
 }
 
 .body__title {
-  text-align: center;
   font-family: 'Prata', serif;
   color: #135359;
-  font-size: 30px;
+  font-size: 45px;
 }
 
-.category-list {
+.body__category-list {
   list-style: none;
+  margin: 5px;
   width: 300px;
-  margin: 0 auto;
+  padding: 0;
 }
 
 .category-list__item {
   background-color: #DAE6E7;
-  width: 200px;
+  width: 100%;
   margin-top: 40px;
-  padding: 10px;
+  padding: 20px 0 20px 0;
   border-radius: 7px;
   box-shadow: 1px 1px 5px rgb(90, 86, 86);
-  font-size: 18px;
+  font-size: 25px;
   font-family: 'Prata', serif;
 }
 
