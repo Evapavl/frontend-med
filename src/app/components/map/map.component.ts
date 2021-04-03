@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Pharmacy } from 'src/app/models/pharmacy.model';
+import { PharmacyService } from 'src/app/services/pharmacies.service';
 
 @Component({
   selector: 'app-map',
@@ -7,7 +9,22 @@ import { Component } from '@angular/core';
 })
 export class MapComponent {
 
-  lat = 51.678418;
-  long = 7.809007;
+  public chosenPharmacy!: Pharmacy;
 
+  public pharmaciesData?: Pharmacy[];
+
+  public isDisplay = false;
+
+  constructor(private pharmacyService: PharmacyService) {
+    this.pharmaciesData = this.getPharmacies();
+  }
+
+  markerClicked(pharmacy: Pharmacy): void {
+    this.isDisplay = (this.isDisplay === false) ? true : false;
+    this.chosenPharmacy = pharmacy;
+  }
+
+  public getPharmacies(): Pharmacy[] {
+    return this.pharmacyService.getPharmacies();
+  }
 }

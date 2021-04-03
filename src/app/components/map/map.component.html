@@ -1,14 +1,34 @@
-<div class="container">
-  <div class="container__header header">
-    <a href="#" class="header__link">Назад</a>
+<header class="header">
+  <a href="#" class="header__link">Назад</a>
+</header>
+<main class="container">
+  <div class="container__body body">
+    <div class="body__seacher">
+      <input type="text" class="body__input" placeholder="Аптека: Бажаємо здоров'я">
+    </div>
+    <div *ngIf="isDisplay" class="body__pharmacy-detail pharmacy-detail">
+      <div class="pharmacy-detail">
+        <p class="pharmacy-detail__title">{{chosenPharmacy.name}} </p>
+        <p class="pharmacy-detail__address detail-item">Адреса: {{ chosenPharmacy.address }}</p>
+        <p class="pharmacy-detail__phone detail-item">Телефон: {{ chosenPharmacy.phone }}</p>
+        <p class="pharmacy-detail__worktime detail-item">Час роботи: </p>
+        <a href="#" class="pharmacy-detail__link">На сайт</a>
+      </div>
+    </div>
   </div>
-  <div class="container__search search">
-    <input type="text" class="search__input" placeholder="Аптека: Бажаємо здоров'я" user-search-input>
-  </div>
-</div>
+</main>
 <agm-map class="container__map"
-  [latitude]='lat'
-  [longitude]='long'
+  [latitude]='51.678918'
+  [longitude]='7.809507'
   >
-
+  <ng-container *ngFor="let pharmacy of pharmaciesData">
+    <ng-container *ngFor="let coordinates of pharmacy.location">
+      <agm-marker
+        [latitude]="coordinates.latitude"
+        [longitude]="coordinates.longitude"
+        (markerClick)="markerClicked(pharmacy)"
+        [label]="pharmacy.name"
+        ></agm-marker>
+    </ng-container>
+  </ng-container>
 </agm-map>

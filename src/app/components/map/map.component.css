@@ -1,39 +1,65 @@
-.container {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-}
-
-.container__header {
+.header {
   background: #0097A7;
-  padding: 10px;
+  height: 30px;
+  padding: 7px;
 }
 
 .header__link {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
-.container__search {
+.container {
   margin: 0 auto;
   width: 400px;
 }
 
-.search__input {
-  width: 90%;
+.container__body {
+  z-index: 2;
+  position: absolute;
+}
+
+.container__map {
+  z-index: 1;
+  position: relative;
+  height: calc(100vh - 45px);
+}
+
+.body__input {
+  width: 400px;
   margin-top: 20px;
   border-radius: 4px;
   border: none;
   padding: 10px;
 }
 
-.search__icon {
-  width: 30px;
-  height: 30px;
+.body__pharmacy-detail {
+  margin-top: 70px;
+  background-color: #ffffff;
 }
 
-.container__map {
-  z-index: 1;
-  height: 100%;
-  position: relative;
+.pharmacy-detail {
+  border-radius: 10px;
+  padding: 10px;
 }
+
+.pharmacy-detail__title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.detail-item {
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.pharmacy-detail__address {
+  color: #777676;
+  font-size: 14px;
+}
+
+.pharmacy-detail__link {
+  color: #0097A7;
+}
+
