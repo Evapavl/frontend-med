@@ -21,7 +21,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     BrowserAnimationsModule,
     AgmCoreModule.forRoot({
-      apiKey: NG_APP_ENVS.GA_MAPS_API_KEY,
+      apiKey: NG_APP_ENVS.gaMapsApiKey,
       libraries: ['places']
     })
   ],
