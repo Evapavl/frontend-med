@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Pharmacy } from 'src/app/models/pharmacy.model';
 import { PharmacyService } from 'src/app/services/pharmacies.service';
 
@@ -7,7 +7,7 @@ import { PharmacyService } from 'src/app/services/pharmacies.service';
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
-export class MapComponent {
+export class MapComponent implements OnInit {
 
   public chosenPharmacy!: Pharmacy;
 
@@ -15,8 +15,10 @@ export class MapComponent {
 
   public isDisplay = false;
 
-  constructor(private pharmacyService: PharmacyService) {
-    this.pharmaciesData = this.getPharmacies();
+  constructor(private pharmacyService: PharmacyService) {}
+
+  ngOnInit(): void {
+    this.getPharmacies();
   }
 
   markerClicked(pharmacy: Pharmacy): void {
@@ -24,7 +26,9 @@ export class MapComponent {
     this.chosenPharmacy = pharmacy;
   }
 
-  public getPharmacies(): Pharmacy[] {
-    return this.pharmacyService.getPharmacies();
+  public getPharmacies(): void {
+    this.pharmacyService.getPharmacies().subscribe((data: Pharmacy[]) => {
+      this.pharmaciesData = data;
+    });
   }
 }
