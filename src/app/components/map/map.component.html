@@ -1,5 +1,5 @@
-<header class="header">
-  <a href="#" class="header__link">Назад</a>
+<header>
+  <app-header></app-header>
 </header>
 <main class="container">
   <div class="container__body body">
@@ -8,11 +8,16 @@
     </div>
     <div *ngIf="isDisplay" class="body__pharmacy-detail pharmacy-detail">
       <div class="pharmacy-detail">
-        <p class="pharmacy-detail__title">{{chosenPharmacy.name}} </p>
+        <p class="pharmacy-detail__title">{{ chosenPharmacy.name }} </p>
         <p class="pharmacy-detail__address detail-item">Адреса: {{ chosenPharmacy.address }}</p>
         <p class="pharmacy-detail__phone detail-item">Телефон: {{ chosenPharmacy.phone }}</p>
         <p class="pharmacy-detail__worktime detail-item">Час роботи: </p>
-        <a href="#" class="pharmacy-detail__link">На сайт</a>
+        <div class="pharmacy-detail__links links">
+          <a routerLink="#" class="links__text">На сайт</a>
+          <div class="links__btn btn">
+            <a [routerLink]="['/pharmacies', chosenPharmacy.id]" class="btn__text">Показати більше</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

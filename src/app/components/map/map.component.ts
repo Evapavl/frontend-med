@@ -21,14 +21,14 @@ export class MapComponent implements OnInit {
     this.getPharmacies();
   }
 
-  markerClicked(pharmacy: Pharmacy): void {
-    this.isDisplay = (this.isDisplay === false) ? true : false;
-    this.chosenPharmacy = pharmacy;
-  }
-
   public getPharmacies(): void {
     this.pharmacyService.getPharmacies().subscribe((data: Pharmacy[]) => {
       this.pharmaciesData = data;
     });
+  }
+
+  markerClicked(pharmacy: Pharmacy): void {
+    this.isDisplay = (this.isDisplay === false) ? true : false;
+    this.chosenPharmacy = pharmacy;
   }
 }

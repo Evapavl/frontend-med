@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 import { Pharmacy } from '../models/pharmacy.model';
 
 @Injectable({
@@ -9,14 +9,14 @@ import { Pharmacy } from '../models/pharmacy.model';
 })
 
 export class PharmacyService {
-
-  url = 'http://127.0.0.1:5500/api/_db.json';
-
   constructor(private httpClient: HttpClient) {}
 
   getPharmacies(): Observable<Pharmacy[]> {
-    return this.httpClient.get<Pharmacy[]>(this.url).pipe(
-      map(( data ) => data)
-    );
+    return this.httpClient.get<Pharmacy[]>(`${environment.apiUrl}/pharmacies`);
+  }
+
+  getPharmacyById(pharmacyId: string): Observable<Pharmacy> {
+    const url = `${environment.apiUrl}/pharmacies/${pharmacyId}`;
+    return this.httpClient.get<Pharmacy>(url);
   }
 }

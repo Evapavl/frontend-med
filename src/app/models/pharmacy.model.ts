@@ -4,16 +4,16 @@ export interface Pharmacy {
   name: string;
   phone: string;
   address: string;
-  workSchedule: WorkSchedule;
+  schedules: Schedules[];
 }
 
-export interface Location {
+interface Location {
   latitude: number;
   longitude: number;
 }
 
-interface WorkSchedule {
-  day: string;
+interface Schedules {
+  dayOfWeek: string;
   timeStartOfWorkDay: string;
   timeEndOfWorkDay: string;
 }

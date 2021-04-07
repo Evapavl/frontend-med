@@ -1,0 +1,11 @@
+.header {
+  background: #0097A7;
+  height: 30px;
+  padding: 8px;
+}
+
+.header__link {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 27px;
+}

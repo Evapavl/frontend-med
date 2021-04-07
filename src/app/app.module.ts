@@ -8,12 +8,16 @@ import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './components/map/map.component';
 import { CategoryPageComponent } from './views/category-page/category-page.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PharmacyMoreInfoComponent } from './components/pharmacy-more-info/pharmacy-more-info.component';
+import { HeaderComponent } from './views/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    CategoryPageComponent
+    CategoryPageComponent,
+    PharmacyMoreInfoComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     })
   ],
   providers: [
-    HttpClient
+    HttpClient,
+    MapComponent
   ],
   bootstrap: [AppComponent]
 })
