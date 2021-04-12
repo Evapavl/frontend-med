@@ -12,7 +12,11 @@
   width: 100vw;
 }
 
+.container__search {
+
+}
+
 .search {
   width: 40em;
-  margin: 15px auto;
+  margin: 20px auto;
 }

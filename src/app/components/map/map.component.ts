@@ -1,23 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Pharmacy } from 'src/app/models/pharmacy.model';
 import { PharmacyService } from 'src/app/services/pharmacies.service';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { ModalFilterComponent } from '../modal-filter/modal-filter.component';
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
-export class MapComponent implements OnInit {
+export class MapComponent {
 
   public chosenPharmacy!: Pharmacy;
 
-  public pharmaciesData?: Pharmacy[];
+  public pharmaciesData!: Pharmacy[];
 
   public isDisplay = false;
 
-  constructor(private pharmacyService: PharmacyService) {}
-
-  ngOnInit(): void {
+  constructor(
+    private pharmacyService: PharmacyService,
+    private dialog: MatDialog
+  ) {
     this.getPharmacies();
   }
 
@@ -34,5 +37,14 @@ export class MapComponent implements OnInit {
 
   onClickCloseBtn(): void {
     this.isDisplay = false;
+  }
+
+  open(): void {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = '100%';
+    dialogConfig.height = '90%';
+    this.dialog.open(ModalFilterComponent, dialogConfig);
   }
 }

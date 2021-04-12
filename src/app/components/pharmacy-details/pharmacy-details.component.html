@@ -1,8 +1,8 @@
 <div class="details">
-  <input type="image" class="details__img-close" src="../../../assets/icons/↳Color@2x.svg" (click)="closeDetails()">
-  <div class="details__heading heading">
-    <h1 class="heading__title">{{ pharmacy.name }}</h1>
+  <div class="details__btn-close btn-close">
+    <input type="image" class="btn-close__img" src="../../../assets/icons/↳Color.svg" (click)="closeDetails()">
   </div>
+  <h1 class="details__title">{{ pharmacy.name }}</h1>
   <p class="details__address">Адреса: {{ pharmacy.address }}</p>
   <div class="details__information information">
     <p class="information__phone">Телефон: {{ pharmacy.phone }}</p>
