@@ -28,7 +28,11 @@ export class MapComponent implements OnInit {
   }
 
   markerClicked(pharmacy: Pharmacy): void {
-    this.isDisplay = (this.isDisplay === false) ? true : false;
+    this.isDisplay = true;
     this.chosenPharmacy = pharmacy;
+  }
+
+  onClickCloseBtn(): void {
+    this.isDisplay = false;
   }
 }
