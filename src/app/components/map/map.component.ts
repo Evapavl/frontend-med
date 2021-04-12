@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Pharmacy } from 'src/app/models/pharmacy.model';
 import { PharmacyService } from 'src/app/services/pharmacies.service';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
@@ -9,7 +9,7 @@ import { ModalFilterComponent } from '../modal-filter/modal-filter.component';
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
-export class MapComponent {
+export class MapComponent implements OnInit {
 
   public chosenPharmacy!: Pharmacy;
 
@@ -27,8 +27,10 @@ export class MapComponent {
     this.chosenPharmacy = pharmacy;
   }
 
-  public getPharmacies(): Pharmacy[] {
-    return this.pharmacyService.getPharmacies();
+  public getPharmacies(): void {
+    this.pharmacyService.getPharmacies().subscribe((data: Pharmacy[]) => {
+      this.pharmaciesData = data;
+    });
   }
 
   open(): void {
