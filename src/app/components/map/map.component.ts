@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Pharmacy } from 'src/app/models/pharmacy.model';
 import { PharmacyService } from 'src/app/services/pharmacies.service';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { ModalFilterComponent } from '../modal-filter/modal-filter.component';
 
 @Component({
   selector: 'app-map',
@@ -15,10 +17,9 @@ export class MapComponent implements OnInit {
 
   public isDisplay = false;
 
-  constructor(private pharmacyService: PharmacyService) {}
-
-  ngOnInit(): void {
-    this.getPharmacies();
+  constructor(private pharmacyService: PharmacyService,
+              private dialog: MatDialog) {
+    this.pharmaciesData = this.getPharmacies();
   }
 
   markerClicked(pharmacy: Pharmacy): void {
@@ -31,4 +32,14 @@ export class MapComponent implements OnInit {
       this.pharmaciesData = data;
     });
   }
+
+  open(): void {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = '100%';
+    dialogConfig.height = '90%';
+    this.dialog.open(ModalFilterComponent, dialogConfig);
+  }
+
 }
