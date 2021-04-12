@@ -3,7 +3,7 @@
 </header>
 <main class="container">
   <div class="container__body body">
-    <div class="body__seacher">
+    <div class="body__seacher" (click)="open()">
       <input type="text" class="body__input" placeholder="Аптека: Бажаємо здоров'я">
     </div>
     <div *ngIf="isDisplay" class="body__pharmacy-detail pharmacy-detail">
