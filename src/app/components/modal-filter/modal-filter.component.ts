@@ -14,11 +14,12 @@ export class ModalFilterComponent {
 
   public pharmaciesData?: Pharmacy[];
 
-  constructor(public dialogRef: MatDialogRef<ModalFilterComponent>,
-              private pharmacyService: PharmacyService,
-              public modalService: ModalFilterService)
-  {
-    this.pharmaciesData = this.getPharmacies();
+  constructor(
+    public dialogRef: MatDialogRef<ModalFilterComponent>,
+    private pharmacyService: PharmacyService,
+    public modalService: ModalFilterService
+  ) {
+    this.getPharmacies();
   }
 
   onClose(): void {
@@ -32,8 +33,9 @@ export class ModalFilterComponent {
     this.dialogRef.close();
   }
 
-  public getPharmacies(): Pharmacy[] {
-    return this.pharmacyService.getPharmacies();
+  public getPharmacies(): void {
+    this.pharmacyService.getPharmacies().subscribe((data: Pharmacy[]) => {
+      this.pharmaciesData = data;
+    });
   }
-
 }

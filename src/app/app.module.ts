@@ -11,6 +11,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MapComponent } from './components/map/map.component';
 import { CategoryPageComponent } from './views/category-page/category-page.component';
+import { PharmacyMoreInfoComponent } from './components/pharmacy-more-info/pharmacy-more-info.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { PharmacyDetailsComponent } from './components/pharmacy-details/pharmacy-details.component';
 import { ModalFilterComponent } from './components/modal-filter/modal-filter.component';
 import { StarsRatingComponent } from './components/stars-rating/stars-rating.component';
 
@@ -19,6 +22,9 @@ import { StarsRatingComponent } from './components/stars-rating/stars-rating.com
     AppComponent,
     MapComponent,
     CategoryPageComponent,
+    PharmacyMoreInfoComponent,
+    HeaderComponent,
+    PharmacyDetailsComponent,
     ModalFilterComponent,
     StarsRatingComponent,
   ],
@@ -37,7 +43,8 @@ import { StarsRatingComponent } from './components/stars-rating/stars-rating.com
     ReactiveFormsModule
   ],
   providers: [
-    HttpClient
+    HttpClient,
+    MapComponent
   ],
   bootstrap: [AppComponent],
   entryComponents: [MapComponent]

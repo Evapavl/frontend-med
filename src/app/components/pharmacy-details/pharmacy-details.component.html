@@ -1,0 +1,17 @@
+<div class="details">
+  <div class="details__btn-close btn-close">
+    <input type="image" class="btn-close__img" src="../../../assets/icons/↳Color.svg" (click)="closeDetails()">
+  </div>
+  <h1 class="details__title">{{ pharmacy.name }}</h1>
+  <p class="details__address">Адреса: {{ pharmacy.address }}</p>
+  <div class="details__information information">
+    <p class="information__phone">Телефон: {{ pharmacy.phone }}</p>
+    <p class="information__worktime">Час роботи: {{ pharmacy.schedules[0].dayOfWeek }} {{ pharmacy.schedules[0].timeStartOfWorkDay }} - {{ pharmacy.schedules[0].timeEndOfWorkDay }}</p>
+  </div>
+  <div class="details__links links">
+    <a routerLink="#" class="links__text">На сайт</a>
+    <div class="links__btn btn">
+      <a [routerLink]="['/pharmacies', pharmacy.id]" class="btn__text">Показати більше</a>
+    </div>
+  </div>
+</div>
