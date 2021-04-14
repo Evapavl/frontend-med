@@ -16,6 +16,10 @@
   flex-direction: column;
 }
 
+.container__filter_indicator {
+  width: 100%;
+}
+
 .filters {
   justify-content: center;
   width: 100%;
@@ -43,7 +47,7 @@
 }
 
 .filter-label {
-  font-size: 18px;
+  font-size: 20px;
   color: #002A2E;
   font-weight: normal;
   font-family: Raleway, sans-serif;
@@ -88,6 +92,7 @@
 }
 
 .filter_rating {
+  margin: 10px 0;
   font-size: 16px;
   color: #002A2E;
   font-weight: normal;

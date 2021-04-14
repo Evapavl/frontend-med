@@ -15,7 +15,7 @@ export class MapComponent {
 
   public pharmaciesData!: Pharmacy[];
 
-  public isDisplay = false;
+  public isDisplayDetails = false;
 
   constructor(
     private pharmacyService: PharmacyService,
@@ -31,12 +31,12 @@ export class MapComponent {
   }
 
   markerClicked(pharmacy: Pharmacy): void {
-    this.isDisplay = true;
+    this.isDisplayDetails = true;
     this.chosenPharmacy = pharmacy;
   }
 
   onClickCloseBtn(): void {
-    this.isDisplay = false;
+    this.isDisplayDetails = false;
   }
 
   open(): void {

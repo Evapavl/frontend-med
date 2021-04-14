@@ -3,9 +3,9 @@
 </header>
 <main class="container">
   <div class="container__search search" placeholder="Аптека: Бажаємо здоров'я">
-    <input type="text" class="search">
+    <input type="text" class="search" (click)="open()">
   </div>
-  <section *ngIf="isDisplay" class="container__details details">
+  <section *ngIf="isDisplayDetails" class="container__details details">
     <app-pharmacy-details [pharmacy]="chosenPharmacy" (clickedCloseBtn)="onClickCloseBtn()"></app-pharmacy-details>
   </section>
 </main>

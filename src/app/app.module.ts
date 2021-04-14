@@ -16,6 +16,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { PharmacyDetailsComponent } from './components/pharmacy-details/pharmacy-details.component';
 import { ModalFilterComponent } from './components/modal-filter/modal-filter.component';
 import { StarsRatingComponent } from './components/stars-rating/stars-rating.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { StarsRatingComponent } from './components/stars-rating/stars-rating.com
     }),
     FormsModule,
     MatSelectModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [
     HttpClient,

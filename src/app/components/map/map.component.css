@@ -13,10 +13,10 @@
 }
 
 .container__search {
-
+  width: 40em;
+  margin: 20px auto;
 }
 
 .search {
   width: 40em;
-  margin: 20px auto;
 }
