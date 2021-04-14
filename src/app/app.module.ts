@@ -17,6 +17,10 @@ import { PharmacyDetailsComponent } from './components/pharmacy-details/pharmacy
 import { ModalFilterComponent } from './components/modal-filter/modal-filter.component';
 import { StarsRatingComponent } from './components/stars-rating/stars-rating.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HospitalsComponent } from './components/hospitals/hospitals.component';
+import { HospitalDetailsComponent } from './components/hospital-details/hospital-details.component';
+import { HospitalMoreInfoComponent } from './components/hospital-more-info/hospital-more-info.component';
+import { PharmaciesComponent } from './components/pharmacies/pharmacies.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     PharmacyDetailsComponent,
     ModalFilterComponent,
     StarsRatingComponent,
+    HospitalsComponent,
+    HospitalDetailsComponent,
+    HospitalMoreInfoComponent,
+    PharmaciesComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +54,8 @@ import { MatDialogModule } from '@angular/material/dialog';
   ],
   providers: [
     HttpClient,
-    MapComponent
+    MapComponent,
+    HospitalsComponent
   ],
   bootstrap: [AppComponent],
   entryComponents: [MapComponent]

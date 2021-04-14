@@ -1,0 +1,26 @@
+<header>
+  <app-header></app-header>
+</header>
+<main class="container">
+  <div class="container__search search" placeholder="Аптека: Бажаємо здоров'я">
+    <input type="text" class="search">
+  </div>
+  <section *ngIf="isDisplayDetails" class="container__details details">
+    <app-hospital-details [hospital]="chosenHospital" (clickedCloseBtn)="onClickCloseBtn()"></app-hospital-details>
+  </section>
+</main>
+<agm-map class="map"
+  [latitude]='51.678918'
+  [longitude]='7.809507'
+  >
+  <ng-container *ngFor="let hospital of hospitalsData">
+    <ng-container *ngFor="let coordinates of hospital.location">
+      <agm-marker
+        [latitude]="coordinates.latitude"
+        [longitude]="coordinates.longitude"
+        (markerClick)="markerClicked(hospital)"
+        [label]="hospital.name"
+        ></agm-marker>
+    </ng-container>
+  </ng-container>
+</agm-map>

@@ -1,0 +1,17 @@
+<header>
+  <app-header></app-header>
+</header>
+<main *ngIf="hospital" class="information">
+  <section class="information__heading heading">
+    <h1 class="heading__title">{{ hospital.name }}</h1>
+    <p class="heading__subtitle">Телефон: {{ hospital.phone }}</p>
+  </section>
+  <section class="information__departments departments">
+    <h2 class="departments__title">Відділення</h2>
+    <ul class="departments__timetable timetable">
+      <li *ngFor="let department of hospital.departments" class="timetable">
+        <p class="timetable__item">{{ department }}</p>
+      </li>
+    </ul>
+  </section>
+</main>
