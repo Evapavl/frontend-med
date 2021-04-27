@@ -17,6 +17,7 @@ import { PharmacyDetailsComponent } from './components/pharmacy-details/pharmacy
 import { ModalFilterComponent } from './components/modal-filter/modal-filter.component';
 import { StarsRatingComponent } from './components/stars-rating/stars-rating.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { PrivateDoctorsComponent } from './components/private-doctors/private-doctors.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     PharmacyDetailsComponent,
     ModalFilterComponent,
     StarsRatingComponent,
+    PrivateDoctorsComponent,
   ],
   imports: [
     BrowserModule,

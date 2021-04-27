@@ -57,6 +57,103 @@
         { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" }
       ]
     }
+  ],
+  "private-doctors": [
+    {
+      "id": 1,
+      "location": [
+        {
+          "latitude": 51.6087,
+          "longitude": 7.3245
+        }
+      ],
+      "name": "Гаврилюк Сергій Васильович",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+      "specialization": "Хірург",
+      "rating": 4,
+      "site": ""
+    },
+    {
+      "id": 2,
+      "location": [
+        {
+          "latitude": 51.6067,
+          "longitude": 7.3275
+        }
+      ],
+      "name": "Гаврилюк Сергій Васильович",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+      "specialization": "Хірург",
+      "rating": 4,
+      "site": ""
+    },
+    {
+      "id": 3,
+      "location": [
+        {
+          "latitude": 51.6084,
+          "longitude": 7.3243
+        }
+      ],
+      "name": "Гаврилюк Сергій Васильович",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+      "specialization": "Хірург",
+      "rating": 4,
+      "site": ""
+    },
+    {
+      "id": 4,
+      "location": [
+        {
+          "latitude": 51.6047,
+          "longitude": 7.3255
+        }
+      ],
+      "name": "Гаврилюк Сергій Васильович",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+      "specialization": "Хірург",
+      "rating": 4,
+      "site": ""
+    }
   ]
-
 }

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MapComponent } from './components/map/map.component';
 import { CategoryPageComponent } from './views/category-page/category-page.component';
 import { PharmacyMoreInfoComponent } from './components/pharmacy-more-info/pharmacy-more-info.component';
+import { PrivateDoctorsComponent } from './components/private-doctors/private-doctors.component';
 
 const routes: Routes = [
   { path: '', component: CategoryPageComponent },
@@ -11,6 +12,13 @@ const routes: Routes = [
     children: [
       { path: '', component: MapComponent},
       { path: ':id', component:  PharmacyMoreInfoComponent},
+    ]
+  },
+  {
+    path: 'private-doctors',
+    children: [
+      { path: '', component: PrivateDoctorsComponent},
+      // { path: ':id', component:  PharmacyMoreInfoComponent},
     ]
   },
   { path: '**', redirectTo: '/', pathMatch: 'full' }
