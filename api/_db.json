@@ -91,7 +91,7 @@
           "longitude": 7.3275
         }
       ],
-      "name": "Гаврилюк Сергій Васильович",
+      "name": "Мовчан Олександр Филимонович",
       "phone": "0971234567",
       "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
       "schedules": [
@@ -103,7 +103,7 @@
         { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
         { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
       ],
-      "specialization": "Хірург",
+      "specialization": "Педіатор",
       "rating": 4,
       "site": ""
     },
@@ -115,7 +115,7 @@
           "longitude": 7.3243
         }
       ],
-      "name": "Гаврилюк Сергій Васильович",
+      "name": "Ахрамчук Тамара В'ячеславівна",
       "phone": "0971234567",
       "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
       "schedules": [
@@ -127,7 +127,7 @@
         { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
         { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
       ],
-      "specialization": "Хірург",
+      "specialization": "Травматолог",
       "rating": 4,
       "site": ""
     },
@@ -139,7 +139,7 @@
           "longitude": 7.3255
         }
       ],
-      "name": "Гаврилюк Сергій Васильович",
+      "name": "Кравченко Микола Миколайович",
       "phone": "0971234567",
       "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
       "schedules": [
@@ -151,7 +151,7 @@
         { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
         { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
       ],
-      "specialization": "Хірург",
+      "specialization": "Лор",
       "rating": 4,
       "site": ""
     }

@@ -18,6 +18,8 @@ import { ModalFilterComponent } from './components/modal-filter/modal-filter.com
 import { StarsRatingComponent } from './components/stars-rating/stars-rating.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PrivateDoctorsComponent } from './components/private-doctors/private-doctors.component';
+import { PrivateDoctorDetailsComponent } from './components/private-doctor-details/private-doctor-details.component';
+import { ModalFilterPrivateDoctorsComponent } from './components/modal-filter-private-doctors/modal-filter-private-doctors.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { PrivateDoctorsComponent } from './components/private-doctors/private-do
     ModalFilterComponent,
     StarsRatingComponent,
     PrivateDoctorsComponent,
+    PrivateDoctorDetailsComponent,
+    ModalFilterPrivateDoctorsComponent,
   ],
   imports: [
     BrowserModule,

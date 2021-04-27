@@ -17,8 +17,7 @@ const routes: Routes = [
   {
     path: 'private-doctors',
     children: [
-      { path: '', component: PrivateDoctorsComponent},
-      // { path: ':id', component:  PharmacyMoreInfoComponent},
+      { path: '', component: PrivateDoctorsComponent}
     ]
   },
   { path: '**', redirectTo: '/', pathMatch: 'full' }

@@ -2,24 +2,24 @@
   <app-header></app-header>
 </header>
 <main class="container">
-  <div class="container__search search" placeholder="">
-    <input type="text" class="search" (click)="open()">
+  <div class="container__search search">
+    <button class="search__button" (click)="open()">Пошук...</button>
   </div>
   <section *ngIf="isDisplayDetails" class="container__details details">
-    <app-pharmacy-details [pharmacy]="chosenPharmacy" (clickedCloseBtn)="onClickCloseBtn()"></app-pharmacy-details>
+    <app-private-doctor-details [privateDoctor]="chosenDoctor" (clickedCloseBtn)="onClickCloseBtn()"></app-private-doctor-details>
   </section>
 </main>
 <agm-map class="map"
   [latitude]='51.678918'
   [longitude]='7.809507'
   >
-  <ng-container *ngFor="let pharmacy of pharmaciesData">
-    <ng-container *ngFor="let coordinates of pharmacy.location">
+  <ng-container *ngFor="let doctor of privateDoctorsData">
+    <ng-container *ngFor="let coordinates of doctor.location">
       <agm-marker
         [latitude]="coordinates.latitude"
         [longitude]="coordinates.longitude"
-        (markerClick)="markerClicked(pharmacy)"
-        [label]="pharmacy.name"
+        (markerClick)="markerClicked(doctor)"
+        [label]="doctor.name"
         ></agm-marker>
     </ng-container>
   </ng-container>
