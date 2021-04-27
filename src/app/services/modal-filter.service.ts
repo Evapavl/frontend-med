@@ -5,7 +5,6 @@ import { PharmFormValueModel } from '../models/pharmFormValue.model';
 @Injectable({
   providedIn: 'root'
 })
-
 export class ModalFilterService {
 
   pharmForm: FormGroup = new FormGroup({

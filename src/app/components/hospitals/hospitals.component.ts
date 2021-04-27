@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { HospitalsService } from 'src/app/services/hospitals.service';
 import { Hospital } from '../../models/hospitals.model';
+import { ModalFilterHospitalsComponent } from '../modal-filter-hospitals/modal-filter-hospitals.component';
 
 @Component({
   selector: 'app-hospitals',
@@ -15,8 +17,11 @@ export class HospitalsComponent {
 
   public isDisplayDetails = false;
 
+  dialogValue!: Hospital[];
+
   constructor(
-    private hospitalsService: HospitalsService
+    private hospitalsService: HospitalsService,
+    private dialog: MatDialog
   ) {
     this.getHospitals();
   }
@@ -34,5 +39,18 @@ export class HospitalsComponent {
 
   onClickCloseBtn(): void {
     this.isDisplayDetails = false;
+  }
+
+  open(): void {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = '100%';
+    dialogConfig.height = '90%';
+    const dialogRef = this.dialog.open(ModalFilterHospitalsComponent, dialogConfig);
+    dialogRef.afterClosed().subscribe((result) => {
+      this.hospitalsData = result.data;
+      console.log(result.data);
+    });
   }
 }

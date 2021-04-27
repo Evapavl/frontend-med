@@ -11,14 +11,16 @@
       "phone": "0971234567",
       "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
       "schedules": [
-        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
-        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
-        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
-        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
-        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
-        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
-        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
-      ]
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00", "isWork": true },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00", "isWork": true },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00", "isWork": true },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00", "isWork": true },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00", "isWork": true },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00", "isWork": true },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00", "isWork": true }
+      ],
+      "rating": 2,
+	    "site": ""
     },
     {
       "id": 2,
@@ -30,14 +32,16 @@
       "phone": "0977654321",
       "address": "бульвар Шевченка, 250, Черкаси, Черкаська область, 18000",
       "schedules": [
-        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" },
-        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" }
-      ]
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00", "isWork": true },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00", "isWork": true }
+      ],
+      "rating": 2,
+	    "site": ""
     },
     {
       "id": 3,
@@ -48,14 +52,16 @@
       "phone": "0977774545",
       "address": "бульвар Шевченка, 345, Черкаси, Черкаська область, 18400",
       "schedules": [
-        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" },
-        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" }
-      ]
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" , "isWork": true},
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00", "isWork": true },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00", "isWork": true }
+      ],
+      "rating": 2,
+	    "site": ""
     }
   ],
   "hospitals": [
@@ -67,9 +73,12 @@
         }
       ],
       "name": "Міська дитяча лікарня",
+      "typeOfProperty": 1,
       "phone": "0931233467",
       "address": "вулиця Олени Теліги, 4, Черкаси, Черкаська, 18000",
-      "departments": [ " Приймальне відділення", "Травматологічний пункт", "Терапевтичне відділення № 1", "Терапевтичне відділення №2", "Кардіологічне відділення"]
+      "departments": [ "Приймальне відділення", "Травматологічний пункт", "Терапевтичне відділення № 1", "Терапевтичне відділення №2", "Кардіологічне відділення"],
+      "rating": 4,
+      "site": ""
     },
     {
       "id": 2,
@@ -79,9 +88,27 @@
         }
       ],
       "name": "Третя Черкаська міська лікарня швидкої медичної допомоги",
+      "typeOfProperty": 0,
       "phone": "0676665647",
       "address": "вулиця Самійла Кішки, 210, Черкаси, Черкаська область, 18000",
-      "departments": [ "Ревматологічне відділення", "Уронефрологічне ввідділення", "Хірургічне відділення №1", "Хірургічне відділення №1", "Гінекологічне відділення"]
+      "departments": [ "Ревматологічне відділення", "Уронефрологічне ввідділення", "Хірургічне відділення №1", "Хірургічне відділення №1", "Гінекологічне відділення"],
+      "rating": 4,
+      "site": ""
+    },
+    {
+      "id": 3,
+      "location": [{
+          "latitude": 52.7187,
+          "longitude": 8.3445
+        }
+      ],
+      "name": "Міська лікарня",
+      "typeOfProperty": 1,
+      "phone": "0931233467",
+      "address": "вулиця Олени Теліги, 4, Черкаси, Черкаська, 18000",
+      "departments": [ " Приймальне відділення", "Травматологічний пункт", "Терапевтичне відділення № 1", "Терапевтичне відділення №2", "Кардіологічне відділення"],
+      "rating": 4,
+      "site": ""
     }
   ]
 }

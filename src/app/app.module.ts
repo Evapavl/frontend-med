@@ -15,12 +15,12 @@ import { PharmacyMoreInfoComponent } from './components/pharmacy-more-info/pharm
 import { HeaderComponent } from './shared/header/header.component';
 import { PharmacyDetailsComponent } from './components/pharmacy-details/pharmacy-details.component';
 import { ModalFilterComponent } from './components/modal-filter/modal-filter.component';
-import { StarsRatingComponent } from './components/stars-rating/stars-rating.component';
+import { StarsRatingComponent } from './shared/stars-rating/stars-rating.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HospitalsComponent } from './components/hospitals/hospitals.component';
 import { HospitalDetailsComponent } from './components/hospital-details/hospital-details.component';
 import { HospitalMoreInfoComponent } from './components/hospital-more-info/hospital-more-info.component';
-import { PharmaciesComponent } from './components/pharmacies/pharmacies.component';
+import { ModalFilterHospitalsComponent } from './components/modal-filter-hospitals/modal-filter-hospitals.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { PharmaciesComponent } from './components/pharmacies/pharmacies.componen
     HospitalsComponent,
     HospitalDetailsComponent,
     HospitalMoreInfoComponent,
-    PharmaciesComponent,
+    ModalFilterHospitalsComponent,
   ],
   imports: [
     BrowserModule,

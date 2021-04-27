@@ -2,8 +2,8 @@
   <app-header></app-header>
 </header>
 <main class="container">
-  <div class="container__search search" placeholder="Аптека: Бажаємо здоров'я">
-    <input type="text" class="search">
+  <div class="container__search search">
+    <button class="search__button" (click)="open()">Пошук...</button>
   </div>
   <section *ngIf="isDisplayDetails" class="container__details details">
     <app-hospital-details [hospital]="chosenHospital" (clickedCloseBtn)="onClickCloseBtn()"></app-hospital-details>
