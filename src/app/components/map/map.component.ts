@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+
 import { Pharmacy } from 'src/app/models/pharmacy.model';
 import { PharmacyService } from 'src/app/services/pharmacies.service';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ModalFilterComponent } from '../modal-filter/modal-filter.component';
 
 @Component({
@@ -15,11 +16,13 @@ export class MapComponent {
 
   public pharmaciesData!: Pharmacy[];
 
+  public pharmacies!: Pharmacy[];
+
   public isDisplayDetails = false;
 
   constructor(
     private pharmacyService: PharmacyService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
   ) {
     this.getPharmacies();
   }
@@ -27,6 +30,7 @@ export class MapComponent {
   public getPharmacies(): void {
     this.pharmacyService.getPharmacies().subscribe((data: Pharmacy[]) => {
       this.pharmaciesData = data;
+      this.pharmacies = data;
     });
   }
 
@@ -45,6 +49,10 @@ export class MapComponent {
     dialogConfig.autoFocus = true;
     dialogConfig.width = '100%';
     dialogConfig.height = '90%';
-    this.dialog.open(ModalFilterComponent, dialogConfig);
+    dialogConfig.data = this.pharmacies;
+    const dialogRef = this.dialog.open(ModalFilterComponent, dialogConfig);
+    dialogRef.afterClosed().subscribe((res: { data: Pharmacy[] }) => {
+      this.pharmaciesData = res.data;
+    });
   }
 }

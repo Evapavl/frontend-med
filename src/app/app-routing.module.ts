@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { MapComponent } from './components/map/map.component';
 import { CategoryPageComponent } from './views/category-page/category-page.component';
 import { PharmacyMoreInfoComponent } from './components/pharmacy-more-info/pharmacy-more-info.component';
+import { MapClinicsComponent } from './components/map-clinics/map-clinics.component';
+import { ClinicMoreInfoComponent } from './components/clinic-more-info/clinic-more-info.component';
+import { MapLabsComponent } from './components/map-labs/map-labs.component';
+import { LabMoreInfoComponent } from './components/lab-more-info/lab-more-info.component';
 
 const routes: Routes = [
   { path: '', component: CategoryPageComponent },
@@ -11,6 +16,20 @@ const routes: Routes = [
     children: [
       { path: '', component: MapComponent},
       { path: ':id', component:  PharmacyMoreInfoComponent},
+    ]
+  },
+  {
+    path: 'clinics',
+    children: [
+      { path: '', component: MapClinicsComponent},
+      { path: ':id', component:  ClinicMoreInfoComponent},
+    ]
+  },
+  {
+    path: 'labs',
+    children: [
+      { path: '', component: MapLabsComponent},
+      { path: ':id', component:  LabMoreInfoComponent},
     ]
   },
   { path: '**', redirectTo: '/', pathMatch: 'full' }

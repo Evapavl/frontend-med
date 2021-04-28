@@ -17,6 +17,12 @@ import { PharmacyDetailsComponent } from './components/pharmacy-details/pharmacy
 import { ModalFilterComponent } from './components/modal-filter/modal-filter.component';
 import { StarsRatingComponent } from './components/stars-rating/stars-rating.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MapClinicsComponent } from './components/map-clinics/map-clinics.component';
+import { ClinicMoreInfoComponent } from './components/clinic-more-info/clinic-more-info.component';
+import { ClinicsModalFilterComponent } from './components/clinics-modal-filter/clinics-modal-filter.component';
+import { MapLabsComponent } from './components/map-labs/map-labs.component';
+import { LabMoreInfoComponent } from './components/lab-more-info/lab-more-info.component';
+import { LabsModalFilterComponent } from './components/labs-modal-filter/labs-modal-filter.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +34,12 @@ import { MatDialogModule } from '@angular/material/dialog';
     PharmacyDetailsComponent,
     ModalFilterComponent,
     StarsRatingComponent,
+    MapClinicsComponent,
+    ClinicMoreInfoComponent,
+    ClinicsModalFilterComponent,
+    MapLabsComponent,
+    LabMoreInfoComponent,
+    LabsModalFilterComponent,
   ],
   imports: [
     BrowserModule,
