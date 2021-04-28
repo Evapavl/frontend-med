@@ -1,5 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+
 import { Pharmacy } from 'src/app/models/pharmacy.model';
+import { Clinic } from '../../models/clinic.model';
+import { Lab } from '../../models/lab.model';
 
 @Component({
   selector: 'app-pharmacy-details',
@@ -8,7 +11,8 @@ import { Pharmacy } from 'src/app/models/pharmacy.model';
 })
 export class PharmacyDetailsComponent {
 
-  @Input() pharmacy!: Pharmacy;
+  @Input() data!: Pharmacy | Lab | Clinic;
+  @Input() routeData!: string;
 
   @Output() clickedCloseBtn = new EventEmitter<boolean>();
 

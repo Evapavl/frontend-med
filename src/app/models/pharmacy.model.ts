@@ -5,6 +5,7 @@ export interface Pharmacy {
   phone: string;
   address: string;
   schedules: Schedules[];
+  isWork: boolean;
 }
 
 interface Location {

@@ -17,6 +17,8 @@
   margin: 20px auto;
 }
 
-.search {
-  width: 40em;
+.search_button {
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
 }

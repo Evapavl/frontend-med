@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+
 import { Star } from '../../models/star.model';
 
 @Component({
@@ -7,6 +8,9 @@ import { Star } from '../../models/star.model';
   styleUrls: ['./stars-rating.component.css']
 })
 export class StarsRatingComponent {
+
+  @Output() starId = new EventEmitter<number>();
+
   selectedRating = 0;
 
   stars: Star[] = [
@@ -48,6 +52,7 @@ export class StarsRatingComponent {
       return star;
     });
     this.selectedRating = value;
+    this.starId.emit(this.selectedRating);
   }
 
 }

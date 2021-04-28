@@ -1,0 +1,42 @@
+.information {
+  font-size: 16px;
+  color: #002A2E;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading__title {
+  font-size: 3em;
+  color: #002A2F;
+  font-family: 'Prata', serif;
+  margin: 40px 0;
+}
+
+.heading__subtitle {
+  color: #002A2F;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+}
+
+.information__block {
+  border: 2px solid #002A2E;
+  border-radius: 30px;
+  margin: 25px auto;
+  width: 90%;
+  padding: 20px 0;
+}
+
+.block__title {
+  font-size: 2.5em;
+  color: #135359;
+  font-family: 'Prata', serif;
+}
+
+.doctors__timetable {
+  list-style: none;
+  padding: 0;
+}
+
+

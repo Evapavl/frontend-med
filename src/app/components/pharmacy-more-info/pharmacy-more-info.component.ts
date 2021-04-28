@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
+
 import { Pharmacy } from 'src/app/models/pharmacy.model';
 import { PharmacyService } from '../../services/pharmacies.service';
 
