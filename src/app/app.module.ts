@@ -27,6 +27,9 @@ import { ClinicsModalFilterComponent } from './components/clinics-modal-filter/c
 import { MapLabsComponent } from './components/map-labs/map-labs.component';
 import { LabMoreInfoComponent } from './components/lab-more-info/lab-more-info.component';
 import { LabsModalFilterComponent } from './components/labs-modal-filter/labs-modal-filter.component';
+import { PrivateDoctorsComponent } from './components/private-doctors/private-doctors.component';
+import { PrivateDoctorDetailsComponent } from './components/private-doctor-details/private-doctor-details.component';
+import { ModalFilterPrivateDoctorsComponent } from './components/modal-filter-private-doctors/modal-filter-private-doctors.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +51,9 @@ import { LabsModalFilterComponent } from './components/labs-modal-filter/labs-mo
     MapLabsComponent,
     LabMoreInfoComponent,
     LabsModalFilterComponent,
+    PrivateDoctorsComponent,
+    PrivateDoctorDetailsComponent,
+    ModalFilterPrivateDoctorsComponent,
   ],
   imports: [
     BrowserModule,

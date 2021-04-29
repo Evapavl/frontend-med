@@ -10,6 +10,7 @@ import { MapClinicsComponent } from './components/map-clinics/map-clinics.compon
 import { ClinicMoreInfoComponent } from './components/clinic-more-info/clinic-more-info.component';
 import { MapLabsComponent } from './components/map-labs/map-labs.component';
 import { LabMoreInfoComponent } from './components/lab-more-info/lab-more-info.component';
+import { PrivateDoctorsComponent } from './components/private-doctors/private-doctors.component';
 
 const routes: Routes = [
   { path: '', component: CategoryPageComponent },
@@ -41,6 +42,7 @@ const routes: Routes = [
       { path: ':id', component:  LabMoreInfoComponent},
     ]
   },
+  { path: 'private-doctors', component: PrivateDoctorsComponent},
   { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 

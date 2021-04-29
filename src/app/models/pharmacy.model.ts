@@ -4,7 +4,7 @@ export interface Pharmacy {
   name: string;
   phone: string;
   address: string;
-  schedules: Schedules[];
+  schedules: Schedule[];
   isWork: boolean;
 }
 
@@ -13,7 +13,7 @@ interface Location {
   longitude: number;
 }
 
-interface Schedules {
+interface Schedule {
   dayOfWeek: string;
   timeStartOfWorkDay: string;
   timeEndOfWorkDay: string;
