@@ -10,7 +10,7 @@ describe('LabsModalFilterComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ LabsModalFilterComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

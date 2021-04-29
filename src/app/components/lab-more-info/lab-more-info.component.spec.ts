@@ -10,7 +10,7 @@ describe('LabMoreInfoComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ LabMoreInfoComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

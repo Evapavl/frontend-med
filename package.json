@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "eslint -c .eslintrc.js --ext .ts ./src",
+    "lint": "eslint --fix .eslintrc.js --ext .ts ./src",
     "e2e": "ng e2e",
     "db:start": "json-server --watch ./api/_db.json"
   },

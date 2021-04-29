@@ -10,7 +10,7 @@ describe('ClinicsModalFilterComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ ClinicsModalFilterComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

@@ -10,7 +10,7 @@ describe('HospitalsComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ HospitalsComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
