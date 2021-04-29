@@ -24,8 +24,8 @@ export class ModalFilterPrivateDoctorsComponent {
     private privateDoctorsService: PrivateDoctorsService,
   ) {
     this.privateDoctorForm = this.formBuilder.group({
-      namePrivateDoctor: ['', Validators.required],
-      specializationOfDoctor: ['', Validators.required]
+      namePrivateDoctor: [''],
+      specializationOfDoctor: ['']
     });
     this.getPrivateDoctors();
   }
@@ -35,8 +35,11 @@ export class ModalFilterPrivateDoctorsComponent {
   }
 
   saveData(): void {
-    // const params = this.getRequestParams();
-
+    const params = this.getRequestParams();
+    this.privateDoctorsService.getFilteredPrivateDoctors(params).subscribe((data: PrivateDoctor[]) => {
+      this.dialogRef.close({event: 'close', data});
+      console.log(data);
+    });
   }
 
   public getPrivateDoctors(): void {
