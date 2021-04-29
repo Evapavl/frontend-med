@@ -21,6 +21,12 @@ import { HospitalsComponent } from './components/hospitals/hospitals.component';
 import { HospitalDetailsComponent } from './components/hospital-details/hospital-details.component';
 import { HospitalMoreInfoComponent } from './components/hospital-more-info/hospital-more-info.component';
 import { ModalFilterHospitalsComponent } from './components/modal-filter-hospitals/modal-filter-hospitals.component';
+import { MapClinicsComponent } from './components/map-clinics/map-clinics.component';
+import { ClinicMoreInfoComponent } from './components/clinic-more-info/clinic-more-info.component';
+import { ClinicsModalFilterComponent } from './components/clinics-modal-filter/clinics-modal-filter.component';
+import { MapLabsComponent } from './components/map-labs/map-labs.component';
+import { LabMoreInfoComponent } from './components/lab-more-info/lab-more-info.component';
+import { LabsModalFilterComponent } from './components/labs-modal-filter/labs-modal-filter.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +42,12 @@ import { ModalFilterHospitalsComponent } from './components/modal-filter-hospita
     HospitalDetailsComponent,
     HospitalMoreInfoComponent,
     ModalFilterHospitalsComponent,
+    MapClinicsComponent,
+    ClinicMoreInfoComponent,
+    ClinicsModalFilterComponent,
+    MapLabsComponent,
+    LabMoreInfoComponent,
+    LabsModalFilterComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +56,7 @@ import { ModalFilterHospitalsComponent } from './components/modal-filter-hospita
     BrowserAnimationsModule,
     MaterialModule,
     AgmCoreModule.forRoot({
-      apiKey: NG_APP_ENVS.gaMapsApiKey,
+      apiKey: 'AIzaSyAMcsvAybaFYmE8bAD8wY2CiEOx25ODtrY',
       libraries: ['places']
     }),
     FormsModule,

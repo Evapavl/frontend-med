@@ -6,21 +6,23 @@
     <button class="search__button" (click)="open()">Пошук...</button>
   </div>
   <section *ngIf="isDisplayDetails" class="container__details details">
-    <app-pharmacy-details [pharmacy]="chosenPharmacy" (clickedCloseBtn)="onClickCloseBtn()"></app-pharmacy-details>
+    <app-pharmacy-details routeData="/pharmacies" [data]="chosenPharmacy"
+                          (clickedCloseBtn)="onClickCloseBtn()"></app-pharmacy-details>
   </section>
 </main>
 <agm-map class="map"
-  [latitude]='51.678918'
-  [longitude]='7.809507'
-  >
+         [latitude]='51.678918'
+         [longitude]='7.809507'
+         [zoom]="10"
+>
   <ng-container *ngFor="let pharmacy of pharmaciesData">
     <ng-container *ngFor="let coordinates of pharmacy.location">
       <agm-marker
         [latitude]="coordinates.latitude"
         [longitude]="coordinates.longitude"
         (markerClick)="markerClicked(pharmacy)"
-        [label]="pharmacy.name"
-        ></agm-marker>
+        [label]="pharmacy.name">
+      </agm-marker>
     </ng-container>
   </ng-container>
 </agm-map>

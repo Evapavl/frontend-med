@@ -6,6 +6,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatCheckboxModule,
     MatSelectModule,
     MatIconModule,
+    MatInputModule
   ],
   exports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MatCheckboxModule,
     MatSelectModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule
   ],
   declarations: []
 })

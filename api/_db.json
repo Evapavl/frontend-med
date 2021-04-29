@@ -110,5 +110,157 @@
       "rating": 4,
       "site": ""
     }
+  ],
+  "clinics": [
+    {
+      "id": 1,
+      "location": [{
+        "latitude": 51.6087,
+        "longitude": 7.3245
+      }
+      ],
+      "name": "Поліклініка №1",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+      "doctors": ["Терапевт", "Хірург", "Уролог", "Травматолог", "Невропатолог", "Окуліст"],
+      "rating": 3
+    },
+    {
+      "id": 2,
+      "location": [
+        { "latitude": 51.7059, "longitude": 7.0507 },
+        { "latitude": 51.7000, "longitude": 7.3232 }
+      ],
+      "name": "Поліклініка №2",
+      "phone": "0977654321",
+      "address": "бульвар Шевченка, 250, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" }
+      ],
+      "doctors": ["Терапевт", "Хірург", "Уролог", "Травматолог", "Невропатолог", "Психолог"],
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "location": [
+        { "latitude": 51.00818, "longitude": 7.0387 }
+      ],
+      "name": "Поліклініка №3",
+      "phone": "0977774545",
+      "address": "бульвар Шевченка, 345, Черкаси, Черкаська область, 18400",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" }
+      ],
+      "doctors":["Терапевт", "Хірург", "Уролог", "Травматолог", "ЛОР"],
+      "rating": 5
+    }
+  ],
+
+  "allDoctors": [
+    "Інфекціоніст", "Кардіолог", "Уролог", "Травматолог", "Окуліст",
+    "Терапевт", "Хірург", "ЛОР", "Психолог", "Невропатолог"
+  ],
+
+  "labs": [
+    {
+      "id": 1,
+      "location": [{
+        "latitude": 51.6087,
+        "longitude": 7.3245
+      }
+      ],
+      "name": "Сінево",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+      "tests": [
+        "Гормональна панель", "Панель пренатальної діагностики", "Панель каріотипування", "Онкологічна панель"
+      ],
+      "rating": 4,
+      "site": ""
+    },
+    {
+      "id": 2,
+      "location": [
+        { "latitude": 51.7059, "longitude": 7.0507 },
+        { "latitude": 51.7000, "longitude": 7.3232 }
+      ],
+      "name": "Лаб-Сервіс",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+      "tests": [
+        "Онкологічна панель", "Інфекційна панель", "Панель імунології", "Панель бактеріологічних досліджень"
+      ],
+      "rating": 3,
+      "site": ""
+    },
+    {
+      "id": 3,
+      "location": [{
+        "latitude": 51.00818, "longitude": 7.0387
+      }
+      ],
+      "name": "Інвітро",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+      "tests": [
+        "Панель бактеріологічних досліджень", "Панель цитологічних досліджень", "Панель патагістлогічних досліджень"
+      ],
+      "rating": 2,
+      "site": ""
+    }
+    ],
+
+  "allTests": [
+    "Панель бактеріологічних досліджень", "Панель цитологічних досліджень", "Панель патагістлогічних досліджень",
+    "Онкологічна панель", "Інфекційна панель", "Панель імунології", "Гормональна панель", "Панель пренатальної діагностики",
+    "Панель каріотипування"
   ]
 }
