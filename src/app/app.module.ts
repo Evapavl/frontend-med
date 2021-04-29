@@ -48,7 +48,7 @@ import { LabsModalFilterComponent } from './components/labs-modal-filter/labs-mo
     BrowserAnimationsModule,
     MaterialModule,
     AgmCoreModule.forRoot({
-      apiKey: NG_APP_ENVS.gaMapsApiKey,
+      apiKey: 'AIzaSyAMcsvAybaFYmE8bAD8wY2CiEOx25ODtrY',
       libraries: ['places']
     }),
     FormsModule,
