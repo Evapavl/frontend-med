@@ -23,6 +23,23 @@ import { ClinicsModalFilterComponent } from './components/clinics-modal-filter/c
 import { MapLabsComponent } from './components/map-labs/map-labs.component';
 import { LabMoreInfoComponent } from './components/lab-more-info/lab-more-info.component';
 import { LabsModalFilterComponent } from './components/labs-modal-filter/labs-modal-filter.component';
+import { GoogleLoginProvider } from 'angularx-social-login';
+import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
+
+const googleLoginOptions = {
+  scope: 'profile email'
+};
+
+const config = {
+  provide: 'SocialAuthServiceConfig',
+  useValue: {
+    autoLogin: false,
+    providers: [{
+      id: GoogleLoginProvider.PROVIDER_ID,
+      provider: new GoogleLoginProvider('431674627538-vldeskjrngc43nqd1h451bmrjnsbshd6.apps.googleusercontent.com', googleLoginOptions)
+    }]
+  } as SocialAuthServiceConfig
+};
 
 @NgModule({
   declarations: [
@@ -54,11 +71,22 @@ import { LabsModalFilterComponent } from './components/labs-modal-filter/labs-mo
     FormsModule,
     MatSelectModule,
     ReactiveFormsModule,
-    MatDialogModule
+    MatDialogModule,
+    SocialLoginModule
   ],
   providers: [
     HttpClient,
-    MapComponent
+    MapComponent,
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [{
+          id: GoogleLoginProvider.PROVIDER_ID,
+          provider: new GoogleLoginProvider('clientId', googleLoginOptions)
+        }]
+      } as SocialAuthServiceConfig
+    }
   ],
   bootstrap: [AppComponent],
   entryComponents: [MapComponent]
