@@ -7,6 +7,10 @@
   <div class="details__information information">
     <p class="information__phone">Телефон: {{ data.phone }}</p>
     <p class="information__worktime">Час роботи: {{ data.schedules[0].dayOfWeek }} {{ data.schedules[0].timeStartOfWorkDay }} - {{ data.schedules[0].timeEndOfWorkDay }}</p>
+    <ng-container *ngIf="user">
+      <p>Вкажіть рейтинг</p>
+      <app-stars-rating (starId)="getIdStar($event)"></app-stars-rating>
+    </ng-container>
   </div>
   <div class="details__links links">
     <a routerLink="#" class="links__text">На сайт</a>
