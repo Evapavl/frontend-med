@@ -48,9 +48,8 @@ export class HospitalsComponent {
     dialogConfig.width = '100%';
     dialogConfig.height = '90%';
     const dialogRef = this.dialog.open(ModalFilterHospitalsComponent, dialogConfig);
-    dialogRef.afterClosed().subscribe((result) => {
+    dialogRef.afterClosed().subscribe((result: { data: Hospital[] }) => {
       this.hospitalsData = result.data;
-      console.log(result.data);
     });
   }
 }

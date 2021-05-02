@@ -10,7 +10,7 @@ describe('ModalFilterPrivateDoctorsComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ ModalFilterPrivateDoctorsComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

@@ -62,7 +62,7 @@ import { ModalFilterPrivateDoctorsComponent } from './components/modal-filter-pr
     BrowserAnimationsModule,
     MaterialModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAMcsvAybaFYmE8bAD8wY2CiEOx25ODtrY',
+      apiKey: '',
       libraries: ['places']
     }),
     FormsModule,

@@ -15,6 +15,8 @@ export class HospitalMoreInfoComponent implements OnInit, OnDestroy {
 
   subscription!: Subscription;
 
+  url = 'hospitals';
+
   constructor(
     private route: ActivatedRoute,
     private hospitalService: HospitalsService

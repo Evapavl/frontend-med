@@ -11,7 +11,19 @@ import { JsonHttpParams } from '../shared/types/json-http-params';
 })
 export class HospitalsService {
 
+  params: Partial<HospitalParamsModel> = {};
+
   constructor(private httpClient: HttpClient) {}
+
+  getRequestParams(nameHospital?: string[], typeOfProperty?: string, nameOfDepartments?: string[]): void {
+    if (nameHospital) { this.params.name = nameHospital; }
+    if (typeOfProperty) {
+      this.params.typeOfProperty = typeOfProperty;
+    }
+    if (nameOfDepartments) {
+      this.params.departments_like = nameOfDepartments;
+    }
+  }
 
   getHospitals(): Observable<Hospital[]> {
     return this.httpClient.get<Hospital[]>(`${environment.apiUrl}/hospitals`);
@@ -22,9 +34,8 @@ export class HospitalsService {
     return this.httpClient.get<Hospital>(url);
   }
 
-  getFilteredHospital(params: Partial<HospitalParamsModel>): Observable<Hospital[]> {
+  getFilteredHospital(): Observable<Hospital[]> {
     const url = `${environment.apiUrl}/hospitals`;
-    console.log(params);
-    return this.httpClient.get<Hospital[]>(url, {params: params as JsonHttpParams});
+    return this.httpClient.get<Hospital[]>(url, {params: this.params as JsonHttpParams});
   }
 }

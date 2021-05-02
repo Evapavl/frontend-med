@@ -26,8 +26,8 @@
     <div class="container__filter filter">
       <mat-label class="filter__label">За спеціальністю</mat-label>
       <mat-select formControlName="specializationOfDoctor" class="filter__select-box" multiple>
-        <mat-option [value]="doctor.specialization" *ngFor="let doctor of privateDoctorsData">
-          {{ doctor.specialization }}
+        <mat-option [value]="specialization" *ngFor="let specialization of allSpecializations">
+          {{ specialization }}
         </mat-option>
       </mat-select>
       <div class="filter__indicator">

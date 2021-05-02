@@ -11,15 +11,27 @@ import { JsonHttpParams } from '../shared/header/type/json-http-params';
 })
 export class PrivateDoctorsService {
 
+  params: Partial<PrivateDoctorParamsModel> = {};
+
   constructor(private httpClient: HttpClient) {}
+
+  getRequestParams(namePrivateDoctor?: string[], specializationOfDoctor?: string[]): void {
+    if (namePrivateDoctor) { this.params.name = namePrivateDoctor; }
+    if (specializationOfDoctor) {
+      this.params.specialization = specializationOfDoctor;
+    }
+  }
 
   getPrivateDoctors(): Observable<PrivateDoctor[]> {
     return this.httpClient.get<PrivateDoctor[]>(`${environment.apiUrl}/private-doctors`);
   }
 
-  getFilteredPrivateDoctors(params: Partial<PrivateDoctorParamsModel>): Observable<PrivateDoctor[]> {
+  getAllSpecialization(): Observable<string[]> {
+    return this.httpClient.get<string[]>(`${environment.apiUrl}/allSpecializations`);
+  }
+
+  getFilteredPrivateDoctors(): Observable<PrivateDoctor[]> {
     const url = `${environment.apiUrl}/private-doctors`;
-    console.log(params);
-    return this.httpClient.get<PrivateDoctor[]>(url, {params: params as JsonHttpParams});
+    return this.httpClient.get<PrivateDoctor[]>(url, {params: this.params as JsonHttpParams});
   }
 }

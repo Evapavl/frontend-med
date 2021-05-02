@@ -33,7 +33,6 @@ export class ClinicsModalFilterComponent {
   public getIdStar(newId: number): void {
     this.id = newId;
     console.log(this.id);
-
   }
 
   public getAllDoctors(): void {
@@ -54,7 +53,6 @@ export class ClinicsModalFilterComponent {
       namesClinic: value.namesClinic,
       doctors: value.doctors
     });
-
   }
 
   onClose(): void {

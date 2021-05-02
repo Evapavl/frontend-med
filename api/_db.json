@@ -2,7 +2,8 @@
   "pharmacies": [
     {
       "id": 1,
-      "location": [{
+      "location": [
+        {
           "latitude": 51.6087,
           "longitude": 7.3245
         }
@@ -263,6 +264,7 @@
     "Онкологічна панель", "Інфекційна панель", "Панель імунології", "Гормональна панель", "Панель пренатальної діагностики",
     "Панель каріотипування"
   ],
+
   "private-doctors": [
     {
       "id": 1,
@@ -351,9 +353,12 @@
         { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
         { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
       ],
-	  "specialization": "Педіатр",
+	  "specialization": "Терапевт",
 	   "rating": 4,
 	   "site": ""
 	  }
+  ],
+  "allSpecializations": [
+	  "Стоматолог-ортодонт", "Терапевт", "Педіатр", "Хірург", "Дієтолог", "Косметолог"
   ]
 }

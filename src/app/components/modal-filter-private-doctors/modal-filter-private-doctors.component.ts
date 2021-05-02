@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
-import { PrivateDoctorParamsModel } from 'src/app/models/private-doctor-param.model';
 import { PrivateDoctorFormValue } from 'src/app/models/private-doctors-form-value.model';
 import { PrivateDoctor } from 'src/app/models/private-doctors.model';
 import { PrivateDoctorsService } from 'src/app/services/private-doctors-service';
@@ -18,6 +16,8 @@ export class ModalFilterPrivateDoctorsComponent {
 
   privateDoctorsData!: PrivateDoctor[];
 
+  allSpecializations: string[] = [];
+
   constructor(
     private formBuilder: FormBuilder,
     public dialogRef: MatDialogRef<ModalFilterPrivateDoctorsComponent>,
@@ -28,17 +28,18 @@ export class ModalFilterPrivateDoctorsComponent {
       specializationOfDoctor: ['']
     });
     this.getPrivateDoctors();
+    this.getAllSpecialization();
   }
 
   onClose(): void {
-    this.dialogRef.close();
+    this.dialogRef.close({data: this.privateDoctorsData});
   }
 
   saveData(): void {
-    const params = this.getRequestParams();
-    this.privateDoctorsService.getFilteredPrivateDoctors(params).subscribe((data: PrivateDoctor[]) => {
+    const formData = this.privateDoctorForm.value as PrivateDoctorFormValue;
+    this.privateDoctorsService.getRequestParams(formData.namePrivateDoctor, formData.specializationOfDoctor);
+    this.privateDoctorsService.getFilteredPrivateDoctors().subscribe((data: PrivateDoctor[]) => {
       this.dialogRef.close({event: 'close', data});
-      console.log(data);
     });
   }
 
@@ -48,17 +49,9 @@ export class ModalFilterPrivateDoctorsComponent {
     });
   }
 
-  getRequestParams(): Partial<PrivateDoctorParamsModel> {
-    const formData = this.privateDoctorForm.value as PrivateDoctorFormValue;
-    const params: Partial<PrivateDoctorParamsModel> = {};
-
-    console.log(formData.namePrivateDoctor);
-
-    if (formData.namePrivateDoctor) { params.name = formData.namePrivateDoctor; }
-
-    if (formData.specializationOfDoctor) {
-      params.specialization = formData.specializationOfDoctor;
-    }
-    return params;
+  public getAllSpecialization(): void {
+    this.privateDoctorsService.getAllSpecialization().subscribe((data: string[]) => {
+      this.allSpecializations = data;
+    });
   }
 }

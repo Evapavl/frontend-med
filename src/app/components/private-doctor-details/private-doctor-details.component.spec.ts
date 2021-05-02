@@ -10,7 +10,7 @@ describe('PrivateDoctorDetailsComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ PrivateDoctorDetailsComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

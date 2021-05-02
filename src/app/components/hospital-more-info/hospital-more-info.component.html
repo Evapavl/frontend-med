@@ -1,7 +1,6 @@
-<header>
-  <app-header></app-header>
-</header>
-<main *ngIf="hospital" class="information">
+<app-header></app-header>
+
+<div *ngIf="hospital" class="information">
   <section class="information__heading heading">
     <h1 class="heading__title">{{ hospital.name }}</h1>
     <p class="heading__subtitle">Телефон: {{ hospital.phone }}</p>
@@ -14,4 +13,4 @@
       </li>
     </ul>
   </section>
-</main>
+</div>
