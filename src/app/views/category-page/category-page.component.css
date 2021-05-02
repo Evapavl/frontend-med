@@ -32,9 +32,9 @@
   background-color: #DAE6E7;
   width: 100%;
   margin-top: 40px;
-  padding: 20px 0 20px 0;
-  border-radius: 7px;
+  padding: 20px;
   box-shadow: 1px 1px 5px rgb(90, 86, 86);
+  border-radius: 7px;
   font-size: 25px;
   font-family: 'Prata', serif;
 }

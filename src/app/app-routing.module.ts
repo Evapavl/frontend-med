@@ -4,10 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { MapComponent } from './components/map/map.component';
 import { CategoryPageComponent } from './views/category-page/category-page.component';
 import { PharmacyMoreInfoComponent } from './components/pharmacy-more-info/pharmacy-more-info.component';
+import { HospitalsComponent } from './components/hospitals/hospitals.component';
+import { HospitalMoreInfoComponent } from './components/hospital-more-info/hospital-more-info.component';
 import { MapClinicsComponent } from './components/map-clinics/map-clinics.component';
 import { ClinicMoreInfoComponent } from './components/clinic-more-info/clinic-more-info.component';
 import { MapLabsComponent } from './components/map-labs/map-labs.component';
 import { LabMoreInfoComponent } from './components/lab-more-info/lab-more-info.component';
+import { PrivateDoctorsComponent } from './components/private-doctors/private-doctors.component';
 
 const routes: Routes = [
   { path: '', component: CategoryPageComponent },
@@ -17,6 +20,13 @@ const routes: Routes = [
       { path: '', component: MapComponent},
       { path: ':id', component:  PharmacyMoreInfoComponent},
     ]
+  },
+  {
+    path: 'hospitals',
+    children: [
+      { path: '', component: HospitalsComponent },
+      { path: ':id', component: HospitalMoreInfoComponent }
+    ],
   },
   {
     path: 'clinics',
@@ -32,6 +42,7 @@ const routes: Routes = [
       { path: ':id', component:  LabMoreInfoComponent},
     ]
   },
+  { path: 'private-doctors', component: PrivateDoctorsComponent},
   { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 

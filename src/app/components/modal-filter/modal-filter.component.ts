@@ -58,9 +58,8 @@ export class ModalFilterComponent {
     const pharmForm = this.pharmForm.value as PharmFormValueModel;
 
     const params = this.pharmacyService.getRequestParams(pharmForm.namesPharm, pharmForm.isWork, this.id);
-    this.pharmacyService.getFilterPharmacy(params).subscribe(
-      (data) => {
-        this.dialogRef.close({data});
-      });
+    this.pharmacyService.getFilterPharmacy(params).subscribe((data) => {
+      this.dialogRef.close({data});
+    });
   }
 }

@@ -39,14 +39,13 @@ export class StarsRatingComponent {
       icon: 'star',
       class: 'star-gray star-hover star'
     }
-
   ];
 
-  selectStar(value: number): void{
+  selectStar(value: number): void {
     this.stars.filter( (star) => {
       if ( star.id <= value){
         star.class = 'star-gold star star-hover';
-      }else{
+      } else {
         star.class = 'star-gray star';
       }
       return star;
@@ -54,5 +53,4 @@ export class StarsRatingComponent {
     this.selectedRating = value;
     this.starId.emit(this.selectedRating);
   }
-
 }

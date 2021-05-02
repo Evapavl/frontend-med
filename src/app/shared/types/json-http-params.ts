@@ -1,1 +1,1 @@
-export type JsonHttpParams = { [param: string]: string | string[] };
+export type JsonHttpParams =  { [param: string]: string | string[] };

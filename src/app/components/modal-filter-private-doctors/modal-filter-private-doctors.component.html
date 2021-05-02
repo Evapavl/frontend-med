@@ -1,0 +1,46 @@
+<mat-toolbar class="modal-toolbar">
+  <h1 class="modal-toolbar__title">Фільтр</h1>
+  <div class="modal-toolbar__btn-close" (click)="onClose()">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M29.5833 3.35425L26.6458 0.416748L15 12.0626L3.35413 0.416748L0.416626 3.35425L12.0625 15.0001L0.416626 26.6459L3.35413 29.5834L15 17.9376L26.6458 29.5834L29.5833 26.6459L17.9375 15.0001L29.5833 3.35425Z"
+            fill="black" fill-opacity="0.6"/>
+    </svg>
+  </div>
+</mat-toolbar>
+<div class="container">
+  <form [formGroup]="privateDoctorForm" (ngSubmit)="saveData()" class="filters">
+    <div class="container__filter filter">
+      <mat-label class="filter__label">П.І.П. лікаря</mat-label>
+      <mat-select formControlName="namePrivateDoctor" class="filter__select-box" multiple>
+        <mat-option [value]="doctor.name" *ngFor="let doctor of privateDoctorsData">
+          {{ doctor.name }}
+        </mat-option>
+      </mat-select>
+      <div class="filter__indicator">
+        <svg width="100%" height="2" viewBox="0 0 5000 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="1.6" fill="black" fill-opacity="0.7"/>
+        </svg>
+      </div>
+    </div>
+    <div class="container__filter filter">
+      <mat-label class="filter__label">За спеціальністю</mat-label>
+      <mat-select formControlName="specializationOfDoctor" class="filter__select-box" multiple>
+        <mat-option [value]="specialization" *ngFor="let specialization of allSpecializations">
+          {{ specialization }}
+        </mat-option>
+      </mat-select>
+      <div class="filter__indicator">
+        <svg width="100%" height="2" viewBox="0 0 5000 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="1.6" fill="black" fill-opacity="0.7"/>
+        </svg>
+      </div>
+    </div>
+    <div class="container__filter">
+      <app-stars-rating></app-stars-rating>
+    </div>
+    <div class="container__button">
+      <button class="button">знайти</button>
+    </div>
+  </form>
+</div>
