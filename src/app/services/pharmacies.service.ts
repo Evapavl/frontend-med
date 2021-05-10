@@ -9,7 +9,6 @@ import { JsonHttpParams } from '../modules/shared/types/json-http-params';
 @Injectable({
   providedIn: 'root'
 })
-
 export class PharmacyService {
 
   constructor(private httpClient: HttpClient) {}
@@ -17,12 +16,13 @@ export class PharmacyService {
   getRequestParams(name?: string[] , isWork?: boolean, rating?: number): Partial<PharmParamsModel> {
 
     const params:  Partial<PharmParamsModel> = {};
-    if (name) {params.name = name; }
+
+    if (name) { params.name = name; }
     if (rating) {
       params.rating_gte = rating;
       params.rating_lte = 5;
     }
-    if (isWork) {params.isWork = isWork; }
+    if (isWork) { params.isWork = isWork; }
     return params;
   }
 
@@ -35,9 +35,8 @@ export class PharmacyService {
     return this.httpClient.get<Pharmacy>(url);
   }
 
-  getFilterPharmacy(params: Partial<PharmParamsModel>  ): Observable<Pharmacy[]>{
+  getFilterPharmacy(params: Partial<PharmParamsModel>): Observable<Pharmacy[]>{
     const url = `${environment.apiUrl}/pharmacies?`;
     return this.httpClient.get<Pharmacy[]>(url, { params: params as JsonHttpParams });
   }
-
 }

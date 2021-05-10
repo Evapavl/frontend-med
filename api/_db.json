@@ -2,25 +2,32 @@
   "pharmacies": [
     {
       "id": 1,
+<<<<<<< HEAD
       "location": [{
           "latitude": 49.42854,
           "longitude": 32.06207
+=======
+      "location": [
+        {
+          "latitude": 51.6087,
+          "longitude": 7.3245
+>>>>>>> master
         }
       ],
       "name": "Аптека Низьких Цін",
       "phone": "0971234567",
       "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
       "schedules": [
-        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
-        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
-        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
-        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
-        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
-        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
-        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00", "isWork": true },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00", "isWork": true },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00", "isWork": true },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00", "isWork": true },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00", "isWork": true },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00", "isWork": true },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00", "isWork": true }
       ],
-      "isWork": true,
-      "rating": 2
+      "rating": 2,
+	    "site": ""
     },
     {
       "id": 2,
@@ -32,16 +39,16 @@
       "phone": "0977654321",
       "address": "бульвар Шевченка, 250, Черкаси, Черкаська область, 18000",
       "schedules": [
-        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" },
-        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" }
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00", "isWork": true },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00", "isWork": true }
       ],
-      "isWork": false,
-      "rating": 4
+      "rating": 2,
+	    "site": ""
     },
     {
       "id": 3,
@@ -52,19 +59,65 @@
       "phone": "0977774545",
       "address": "бульвар Шевченка, 345, Черкаси, Черкаська область, 18400",
       "schedules": [
-        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" },
-        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" },
-        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00" }
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00", "isWork": true },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "21:00" , "isWork": true},
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00", "isWork": true },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "19:00", "isWork": true }
       ],
-      "isWork": true,
-      "rating": 5
+      "rating": 2,
+	    "site": ""
     }
   ],
-
+  "hospitals": [
+    {
+      "id": 1,
+      "location": [{
+          "latitude": 52.7087,
+          "longitude": 8.3245
+        }
+      ],
+      "name": "Міська дитяча лікарня",
+      "typeOfProperty": 1,
+      "phone": "0931233467",
+      "address": "вулиця Олени Теліги, 4, Черкаси, Черкаська, 18000",
+      "departments": [ "Приймальне відділення", "Травматологічний пункт", "Терапевтичне відділення № 1", "Терапевтичне відділення №2", "Кардіологічне відділення"],
+      "rating": 4,
+      "site": ""
+    },
+    {
+      "id": 2,
+      "location": [{
+          "latitude": 52.6067,
+          "longitude": 8.3445
+        }
+      ],
+      "name": "Третя Черкаська міська лікарня швидкої медичної допомоги",
+      "typeOfProperty": 0,
+      "phone": "0676665647",
+      "address": "вулиця Самійла Кішки, 210, Черкаси, Черкаська область, 18000",
+      "departments": [ "Ревматологічне відділення", "Уронефрологічне ввідділення", "Хірургічне відділення №1", "Хірургічне відділення №1", "Гінекологічне відділення"],
+      "rating": 4,
+      "site": ""
+    },
+    {
+      "id": 3,
+      "location": [{
+          "latitude": 52.7187,
+          "longitude": 8.3445
+        }
+      ],
+      "name": "Міська лікарня",
+      "typeOfProperty": 1,
+      "phone": "0931233467",
+      "address": "вулиця Олени Теліги, 4, Черкаси, Черкаська, 18000",
+      "departments": [ " Приймальне відділення", "Травматологічний пункт", "Терапевтичне відділення № 1", "Терапевтичне відділення №2", "Кардіологічне відділення"],
+      "rating": 4,
+      "site": ""
+    }
+  ],
   "clinics": [
     {
       "id": 1,
@@ -213,6 +266,102 @@
     "Панель бактеріологічних досліджень", "Панель цитологічних досліджень", "Панель патагістлогічних досліджень",
     "Онкологічна панель", "Інфекційна панель", "Панель імунології", "Гормональна панель", "Панель пренатальної діагностики",
     "Панель каріотипування"
-  ]
+  ],
 
+  "private-doctors": [
+    {
+      "id": 1,
+      "location": [{
+        "latitude": 51.6387,
+        "longitude": 7.3545
+      }],
+      "name": "Гаврилюк Сергій Васильович",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+      "specialization": "Хірург",
+      "rating": 4,
+      "site": ""
+	  },
+    {
+      "id": 2,
+      "location": [{
+        "latitude": 51.6767,
+        "longitude": 7.3955
+      }
+      ],
+      "name": "Мовчан Олександр Филимонович",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+	  "specialization": "Педіатр",
+	   "rating": 4,
+	   "site": ""
+	  },
+    {
+      "id": 3,
+      "location": [{
+        "latitude": 51.6197,
+        "longitude": 7.3435
+      }
+      ],
+      "name": "Ахрамчук Тамара В'ячеславівна",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+	  "specialization": "Стоматолог-ортодонт",
+	   "rating": 4,
+	   "site": ""
+	  },
+    {
+      "id": 4,
+      "location": [{
+        "latitude": 51.6097,
+        "longitude": 7.3235
+      }
+      ],
+      "name": "Дахно Людмила Миколаївна",
+      "phone": "0971234567",
+      "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
+      "schedules": [
+        { "dayOfWeek": "Понеділок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Вівторок", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Середа", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Четвер", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "П'ятниця", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "20:00" },
+        { "dayOfWeek": "Субота", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" },
+        { "dayOfWeek": "Неділя", "timeStartOfWorkDay" : "08:00", "timeEndOfWorkDay": "18:00" }
+      ],
+	  "specialization": "Терапевт",
+	   "rating": 4,
+	   "site": ""
+	  }
+  ],
+  "allSpecializations": [
+	  "Стоматолог-ортодонт", "Терапевт", "Педіатр", "Хірург", "Дієтолог", "Косметолог"
+  ]
 }

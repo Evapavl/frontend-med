@@ -1,0 +1,14 @@
+<div class="details">
+  <div class="details__btn-close btn-close">
+    <input type="image" class="btn-close__img" src="../../../assets/icons/↳Color.svg" (click)="closeDetails()">
+  </div>
+  <h1 class="details__title">{{ privateDoctor.name }}</h1>
+  <p class="details__address">{{ privateDoctor.specialization }}</p>
+  <div class="details__information information">
+    <p class="information__phone">{{ privateDoctor.address }}</p>
+    <p class="information__phone">Телефон: {{ privateDoctor.phone }}</p>
+  </div>
+  <div class="details__btn btn">
+    <a routerLink="#" class="btn__text">На сайт</a>
+  </div>
+</div>
