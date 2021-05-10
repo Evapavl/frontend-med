@@ -13,9 +13,13 @@ export class PrivateDoctorsComponent {
 
   public privateDoctorsData!: PrivateDoctor[];
 
+  public privDocsData!: PrivateDoctor[];
+
   public chosenDoctor!: PrivateDoctor;
 
   public isDisplayDetails = false;
+
+  public zoom = 14;
 
   constructor(
     private privateDoctorsService: PrivateDoctorsService,
@@ -24,9 +28,14 @@ export class PrivateDoctorsComponent {
     this.getPrivateDoctors();
   }
 
+  public onZoomChange(newZoomValue: number): void {
+    this.zoom = newZoomValue;
+  }
+
   public getPrivateDoctors(): void {
     this.privateDoctorsService.getPrivateDoctors().subscribe((data: PrivateDoctor[]) => {
       this.privateDoctorsData = data;
+      this.privDocsData = data;
     });
   }
 
@@ -45,6 +54,7 @@ export class PrivateDoctorsComponent {
     dialogConfig.autoFocus = true;
     dialogConfig.width = '100%';
     dialogConfig.height = '90%';
+    dialogConfig.data = this.privDocsData;
     const dialogRef = this.dialog.open(ModalFilterPrivateDoctorsComponent, dialogConfig);
     dialogRef.afterClosed().subscribe((result: { data: PrivateDoctor[] }) => {
       this.privateDoctorsData = result.data;

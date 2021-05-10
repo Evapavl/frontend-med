@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-<<<<<<< HEAD
 import { MapComponent } from './modules/pharmacies/components/map/map.component';
 import { CategoryPageComponent } from './modules/views/components/category-page/category-page.component';
 import { PharmacyMoreInfoComponent } from './modules/pharmacies/components/pharmacy-more-info/pharmacy-more-info.component';
@@ -9,18 +8,9 @@ import { MapClinicsComponent } from './modules/clinics/components/map-clinics/ma
 import { ClinicMoreInfoComponent } from './modules/clinics/components/clinic-more-info/clinic-more-info.component';
 import { MapLabsComponent } from './modules/labs/components/map-labs/map-labs.component';
 import { LabMoreInfoComponent } from './modules/labs/components/lab-more-info/lab-more-info.component';
-=======
-import { MapComponent } from './components/map/map.component';
-import { CategoryPageComponent } from './views/category-page/category-page.component';
-import { PharmacyMoreInfoComponent } from './components/pharmacy-more-info/pharmacy-more-info.component';
-import { HospitalsComponent } from './components/hospitals/hospitals.component';
-import { HospitalMoreInfoComponent } from './components/hospital-more-info/hospital-more-info.component';
-import { MapClinicsComponent } from './components/map-clinics/map-clinics.component';
-import { ClinicMoreInfoComponent } from './components/clinic-more-info/clinic-more-info.component';
-import { MapLabsComponent } from './components/map-labs/map-labs.component';
-import { LabMoreInfoComponent } from './components/lab-more-info/lab-more-info.component';
-import { PrivateDoctorsComponent } from './components/private-doctors/private-doctors.component';
->>>>>>> master
+import { HospitalsComponent } from './modules/hospitals/components/hospitals/hospitals.component';
+import { HospitalMoreInfoComponent } from './modules/hospitals/components/hospital-more-info/hospital-more-info.component';
+import { PrivateDoctorsComponent } from './modules/private-doctors/components/private-doctors/private-doctors.component';
 
 const routes: Routes = [
   { path: '', component: CategoryPageComponent },

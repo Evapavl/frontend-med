@@ -3,8 +3,11 @@
 }
 
 .title {
+  font-size: 20px;
   color: #002A2E;
+  font-weight: normal;
   font-family: Raleway, sans-serif;
+  font-style: normal;
 }
 
 .star {
@@ -14,6 +17,16 @@
   cursor: pointer;
   transition: all .3s;
   transform: scale(1);
+}
+
+.rating__title {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #002A2E;
+  font-weight: normal;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  padding: 0 1%;
 }
 
 .star mat-icon {

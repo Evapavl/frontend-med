@@ -70,7 +70,6 @@ export class ModalFilterComponent {
             this.isNoCameData = true;
             this.open();
           }
-
         });
     } else {
       this.isNoEnterData = true;
