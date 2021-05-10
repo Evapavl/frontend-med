@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Hospital } from 'src/app/models/hospitals.model';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
-import { HospitalsService } from '../../services/hospitals.service';
+import { HospitalsService } from 'src/app/services/hospitals.service';
 
 @Component({
   selector: 'app-hospital-more-info',

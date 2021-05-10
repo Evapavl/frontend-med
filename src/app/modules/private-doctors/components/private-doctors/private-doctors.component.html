@@ -1,18 +1,15 @@
-<header class="header">
-  <app-header></app-header>
-</header>
-<main class="container">
+<app-header></app-header>
+<div class="container">
   <div class="container__search search">
     <button class="search_button" (click)="open()">Пошук...</button>
   </div>
   <section *ngIf="isDisplayDetails" class="container__details details">
-    <app-details
-      routeData="/pharmacies"
-      [data]="chosenPharmacy"
+    <app-private-doctor-details
+      [privateDoctor]="chosenDoctor"
       (clickedCloseBtn)="onClickCloseBtn()"
-    ></app-details>
+    ></app-private-doctor-details>
   </section>
-</main>
+</div>
 <agm-map
   class="map"
   [latitude]="49.42854"
@@ -20,19 +17,19 @@
   [zoom]="zoom"
   (zoomChange)="onZoomChange($event)"
 >
-  <ng-container *ngFor="let pharmacy of pharmaciesData">
-    <ng-container *ngFor="let coordinates of pharmacy.location">
+  <ng-container *ngFor="let doctor of privateDoctorsData">
+    <ng-container *ngFor="let coordinates of doctor.location">
       <agm-marker
         [latitude]="coordinates.latitude"
         [longitude]="coordinates.longitude"
-        (markerClick)="markerClicked(pharmacy)"
+        (markerClick)="markerClicked(doctor)"
       >
         <agm-overlay
           [latitude]="coordinates.latitude | decr: zoom"
           [longitude]="coordinates.longitude | sum: zoom"
         >
           <div class="descrip-marker" [descriptionMarker]="zoom">
-            {{ pharmacy.name }}
+            {{ doctor.name }}
           </div>
         </agm-overlay>
       </agm-marker>

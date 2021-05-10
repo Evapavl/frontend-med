@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { Hospital } from 'src/app/models/hospitals.model';
 import { HospitalsService } from 'src/app/services/hospitals.service';
-import { Hospital } from '../../models/hospitals.model';
 import { ModalFilterHospitalsComponent } from '../modal-filter-hospitals/modal-filter-hospitals.component';
 
 @Component({
@@ -13,9 +13,13 @@ export class HospitalsComponent {
 
   public hospitalsData!: Hospital[];
 
+  public hospitals!: Hospital[];
+
   public chosenHospital!: Hospital;
 
   public isDisplayDetails = false;
+
+  public zoom = 14;
 
   dialogValue!: Hospital[];
 
@@ -26,9 +30,14 @@ export class HospitalsComponent {
     this.getHospitals();
   }
 
+  public onZoomChange(newZoomValue: number): void {
+    this.zoom = newZoomValue;
+  }
+
   public getHospitals(): void {
     this.hospitalsService.getHospitals().subscribe((data: Hospital[]) => {
       this.hospitalsData = data;
+      this.hospitals = data;
     });
   }
 
@@ -47,6 +56,7 @@ export class HospitalsComponent {
     dialogConfig.autoFocus = true;
     dialogConfig.width = '100%';
     dialogConfig.height = '90%';
+    dialogConfig.data = this.hospitals;
     const dialogRef = this.dialog.open(ModalFilterHospitalsComponent, dialogConfig);
     dialogRef.afterClosed().subscribe((result: { data: Hospital[] }) => {
       this.hospitalsData = result.data;
