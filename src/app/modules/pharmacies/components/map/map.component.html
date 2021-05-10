@@ -1,0 +1,41 @@
+<header class="header">
+  <app-header></app-header>
+</header>
+<main class="container">
+  <div class="container__search search">
+    <button class="search__button" (click)="open()">Пошук...</button>
+  </div>
+  <section *ngIf="isDisplayDetails" class="container__details details">
+    <app-details
+      routeData="/pharmacies"
+      [data]="chosenPharmacy"
+      (clickedCloseBtn)="onClickCloseBtn()"
+    ></app-details>
+  </section>
+</main>
+<agm-map
+  class="map"
+  [latitude]="49.42854"
+  [longitude]="32.06207"
+  [zoom]="zoom"
+  (zoomChange)="onZoomChange($event)"
+>
+  <ng-container *ngFor="let pharmacy of pharmaciesData">
+    <ng-container *ngFor="let coordinates of pharmacy.location">
+      <agm-marker
+        [latitude]="coordinates.latitude"
+        [longitude]="coordinates.longitude"
+        (markerClick)="markerClicked(pharmacy)"
+      >
+        <agm-overlay
+          [latitude]="coordinates.latitude | decr: zoom"
+          [longitude]="coordinates.longitude | sum: zoom"
+        >
+          <div class="descrip-marker" [descriptionMarker]="zoom">
+            {{ pharmacy.name }}
+          </div>
+        </agm-overlay>
+      </agm-marker>
+    </ng-container>
+  </ng-container>
+</agm-map>

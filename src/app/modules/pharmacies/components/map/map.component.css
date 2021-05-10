@@ -1,0 +1,41 @@
+.map {
+  width: 100%;
+  height: calc(100vh - 66px);
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  position: absolute;
+  z-index: 2;
+  font-size: 16px;
+  width: 100%;
+}
+
+.container__search {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.search_button {
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #DAE6E7;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px rgb(90, 86, 86);
+  font-size: 25px;
+  font-family: 'Prata', serif;
+  color: #003C42;
+}
+
+.descrip-marker {
+-webkit-text-stroke: 0.2px black;
+font-size: 12px;
+color: #135359;
+max-width: 150px;
+height: 15px;
+text-transform: uppercase;
+font-family: 'Prata', sans-serif;
+}

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Pharmacy } from '../models/pharmacy.model';
 import { PharmParamsModel } from '../models/pharm-options.model';
-import { JsonHttpParams } from '../shared/types/json-http-params';
+import { JsonHttpParams } from '../modules/shared/types/json-http-params';
 
 @Injectable({
   providedIn: 'root'

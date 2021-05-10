@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Clinic } from '../models/clinic.model';
 import { ClinicParamsModel } from '../models/clinic-params.model';
-import { JsonHttpParams } from '../shared/types/json-http-params';
+import { JsonHttpParams } from '../modules/shared/types/json-http-params';
 
 @Injectable({
   providedIn: 'root'

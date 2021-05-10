@@ -1,6 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+<<<<<<< HEAD
+import { MapComponent } from './modules/pharmacies/components/map/map.component';
+import { CategoryPageComponent } from './modules/views/components/category-page/category-page.component';
+import { PharmacyMoreInfoComponent } from './modules/pharmacies/components/pharmacy-more-info/pharmacy-more-info.component';
+import { MapClinicsComponent } from './modules/clinics/components/map-clinics/map-clinics.component';
+import { ClinicMoreInfoComponent } from './modules/clinics/components/clinic-more-info/clinic-more-info.component';
+import { MapLabsComponent } from './modules/labs/components/map-labs/map-labs.component';
+import { LabMoreInfoComponent } from './modules/labs/components/lab-more-info/lab-more-info.component';
+=======
 import { MapComponent } from './components/map/map.component';
 import { CategoryPageComponent } from './views/category-page/category-page.component';
 import { PharmacyMoreInfoComponent } from './components/pharmacy-more-info/pharmacy-more-info.component';
@@ -11,6 +20,7 @@ import { ClinicMoreInfoComponent } from './components/clinic-more-info/clinic-mo
 import { MapLabsComponent } from './components/map-labs/map-labs.component';
 import { LabMoreInfoComponent } from './components/lab-more-info/lab-more-info.component';
 import { PrivateDoctorsComponent } from './components/private-doctors/private-doctors.component';
+>>>>>>> master
 
 const routes: Routes = [
   { path: '', component: CategoryPageComponent },

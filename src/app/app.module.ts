@@ -1,13 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MaterialModule } from './material/material.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatSelectModule } from '@angular/material/select';
 import { AgmCoreModule } from '@agm/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
+<<<<<<< HEAD
+=======
 import { AppComponent } from './app.component';
 import { MapComponent } from './components/map/map.component';
 import { CategoryPageComponent } from './views/category-page/category-page.component';
@@ -30,26 +28,23 @@ import { LabsModalFilterComponent } from './components/labs-modal-filter/labs-mo
 import { PrivateDoctorsComponent } from './components/private-doctors/private-doctors.component';
 import { PrivateDoctorDetailsComponent } from './components/private-doctor-details/private-doctor-details.component';
 import { ModalFilterPrivateDoctorsComponent } from './components/modal-filter-private-doctors/modal-filter-private-doctors.component';
+>>>>>>> master
 import { GoogleLoginProvider } from 'angularx-social-login';
 import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
+
+import { AppComponent } from './app.component';
+import { modules } from './modules';
+import { MapComponent } from './modules/pharmacies/components/map/map.component';
 
 const googleLoginOptions = {
   scope: 'profile email'
 };
 
-const config = {
-  provide: 'SocialAuthServiceConfig',
-  useValue: {
-    autoLogin: false,
-    providers: [{
-      id: GoogleLoginProvider.PROVIDER_ID,
-      provider: new GoogleLoginProvider('431674627538-vldeskjrngc43nqd1h451bmrjnsbshd6.apps.googleusercontent.com', googleLoginOptions)
-    }]
-  } as SocialAuthServiceConfig
-};
-
 @NgModule({
   declarations: [
+<<<<<<< HEAD
+    AppComponent
+=======
     AppComponent,
     MapComponent,
     CategoryPageComponent,
@@ -71,21 +66,18 @@ const config = {
     PrivateDoctorsComponent,
     PrivateDoctorDetailsComponent,
     ModalFilterPrivateDoctorsComponent,
+>>>>>>> master
   ],
   imports: [
+    ...modules,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule,
     AgmCoreModule.forRoot({
       apiKey: '',
       libraries: ['places']
     }),
-    FormsModule,
-    MatSelectModule,
-    ReactiveFormsModule,
-    MatDialogModule,
     SocialLoginModule
   ],
   providers: [
@@ -98,7 +90,7 @@ const config = {
         autoLogin: false,
         providers: [{
           id: GoogleLoginProvider.PROVIDER_ID,
-          provider: new GoogleLoginProvider('clientId', googleLoginOptions)
+          provider: new GoogleLoginProvider(NG_APP_ENVS.googleIdKey, googleLoginOptions)
         }]
       } as SocialAuthServiceConfig
     }

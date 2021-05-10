@@ -1,0 +1,25 @@
+<div class="header">
+  <div *ngIf="routeUrl != '/'" class="header-back">
+    <mat-icon class="arrow_back">arrow_back</mat-icon>
+    <div class="link-back">
+      <a href="#" class="header__link">Назад</a>
+    </div>
+  </div>
+  <div *ngIf="routeUrl === '/'" class="header-back"></div>
+  <div class="block-auth" *ngIf="!user">
+    <a role="button" class="container-sing-in" (click)="signInWithGoogle()">
+      <img
+        type="image"
+        style="width: 24px; height: 24px"
+        src="../../../assets/icons/google.png"
+      />
+      <div class="sing-in-text">Ввійти через Google</div>
+    </a>
+  </div>
+  <div class="block-auth" *ngIf="user">
+    <div class="container-sing-out">
+      <img class="user" src="{{ user.photoUrl }}" />
+      <div class="sign-out-text" (click)="signOut()">Вийти</div>
+    </div>
+  </div>
+</div>

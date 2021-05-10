@@ -1,0 +1,19 @@
+<header>
+  <app-header></app-header>
+</header>
+<main *ngIf="pharmacy" class="information">
+  <section class="information__heading heading">
+    <h1 class="heading__title">{{ pharmacy.name }}</h1>
+    <p class="heading__address"> {{ pharmacy.address }}</p>
+    <p class="heading__subtitle">Телефон: {{ pharmacy.phone }}</p>
+  </section>
+  <section class="information__schedule schedule">
+    <h2 class="schedule__title">Час роботи</h2>
+    <ul class="schedule__timetable timetable">
+      <li *ngFor="let schedule of pharmacy.schedules" class="timetable">
+        <p class="timetable__item">{{ schedule.dayOfWeek }} : {{ schedule.timeStartOfWorkDay }} - {{ schedule.timeEndOfWorkDay }}</p>
+      </li>
+    </ul>
+  </section>
+  <a routerLink="#" class="links__text">На сайт</a>
+</main>

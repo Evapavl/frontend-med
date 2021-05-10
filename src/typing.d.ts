@@ -1,4 +1,5 @@
 interface NgAppEnvs {
+  googleIdKey: string;
   gaMapsApiKey: string;
 }
 

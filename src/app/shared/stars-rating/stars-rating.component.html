@@ -1,7 +1,0 @@
-<p class="title">По рейтингу</p>
-<div class="rating">
-  <p class="rating__title title">Максимальний рейтинг</p>
-  <div *ngFor="let star of stars" [ngClass]="[star.class]" (click)="selectStar(star.id)">
-    <mat-icon>{{star.icon}}</mat-icon>
-  </div>
-</div>
