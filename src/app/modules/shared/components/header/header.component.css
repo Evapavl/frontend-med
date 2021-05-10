@@ -1,0 +1,89 @@
+.header {
+  background: #0097A7;
+  height: 50px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-back {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.arrow_back {
+  color:white;
+  width: 5%;
+  justify-content: flex-end;
+}
+
+.link-back {
+  width: 50%;
+  justify-content: flex-end;
+  display: flex;
+  
+}
+
+.header__link {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 27px;
+}
+
+.block-auth {
+  width: 18%;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.container-sing-in {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container-sing-out {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-sign-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sign-out-text {
+  font-size: 15px;
+  justify-content: center;
+  cursor: pointer;
+  color: #ECEFF1;
+}
+
+.sing-in-text {
+  font-size: 15px;
+  color: #135359;
+}
+
+.user {
+  background-color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Lab } from '../models/lab.model';
 import { ClinicParamsModel } from '../models/clinic-params.model';
-import { JsonHttpParams } from '../shared/types/json-http-params';
+import { JsonHttpParams } from '../modules/shared/types/json-http-params';
 import { LabParamsModel } from '../models/lab-params.model';
 
 @Injectable({

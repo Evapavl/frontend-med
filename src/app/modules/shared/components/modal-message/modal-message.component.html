@@ -1,0 +1,13 @@
+<div class="container-modal-message">
+  <div class="modal-message-texts">
+  <div class="modal-message-text" *ngIf="data.isNoCameData">За вашим запитом нічого не знайдено</div>
+  <div class="modal-message-text" *ngIf="data.isNoEnterData">Будь ласка введіть дані для пошуку</div>
+</div>
+  <div class="container-buttons">
+    <button class="btn" (click)="close()">Повернутися до фільтру</button>
+    <button class="btn"
+    (click)="closeAllModal()" routerLink="#">
+      Повернутися на головну
+    </button>
+  </div>
+</div>

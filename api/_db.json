@@ -3,11 +3,11 @@
     {
       "id": 1,
       "location": [{
-          "latitude": 51.6087,
-          "longitude": 7.3245
+          "latitude": 49.42854,
+          "longitude": 32.06207
         }
       ],
-      "name": "Аптека",
+      "name": "Аптека Низьких Цін",
       "phone": "0971234567",
       "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
       "schedules": [
@@ -25,8 +25,8 @@
     {
       "id": 2,
       "location": [
-        { "latitude": 51.7059, "longitude": 7.0507 },
-        { "latitude": 51.7000, "longitude": 7.3232 }
+        { "latitude": 49.4182, "longitude": 32.0681 },
+        { "latitude": 49.41832, "longitude": 32.061 }
       ],
       "name": "Бажаємо здоров'я",
       "phone": "0977654321",
@@ -46,7 +46,7 @@
     {
       "id": 3,
       "location": [
-        { "latitude": 51.00818, "longitude": 7.0387 }
+        { "latitude": 49.42, "longitude": 32.0621 }
       ],
       "name": "Соціальна аптека",
       "phone": "0977774545",
@@ -69,8 +69,8 @@
     {
       "id": 1,
       "location": [{
-        "latitude": 51.6087,
-        "longitude": 7.3245
+        "latitude": 49.42854,
+          "longitude": 32.06207
       }
       ],
       "name": "Поліклініка №1",
@@ -91,8 +91,8 @@
     {
       "id": 2,
       "location": [
-        { "latitude": 51.7059, "longitude": 7.0507 },
-        { "latitude": 51.7000, "longitude": 7.3232 }
+        { "latitude": 49.4182, "longitude": 32.0681 },
+        { "latitude": 49.41832, "longitude": 32.061 }
       ],
       "name": "Поліклініка №2",
       "phone": "0977654321",
@@ -112,7 +112,7 @@
     {
       "id": 3,
       "location": [
-        { "latitude": 51.00818, "longitude": 7.0387 }
+        { "latitude": 49.42, "longitude": 32.0621 }
       ],
       "name": "Поліклініка №3",
       "phone": "0977774545",
@@ -140,10 +140,9 @@
     {
       "id": 1,
       "location": [{
-        "latitude": 51.6087,
-        "longitude": 7.3245
-      }
-      ],
+        "latitude": 49.42854,
+        "longitude": 32.06207
+      }],
       "name": "Сінево",
       "phone": "0971234567",
       "address": "вулиця Сумгаїтська, 15, Черкаси, Черкаська область, 18000",
@@ -165,8 +164,8 @@
     {
       "id": 2,
       "location": [
-        { "latitude": 51.7059, "longitude": 7.0507 },
-        { "latitude": 51.7000, "longitude": 7.3232 }
+        { "latitude": 49.4182, "longitude": 32.0681 },
+        { "latitude": 49.41832, "longitude": 32.061 }
       ],
       "name": "Лаб-Сервіс",
       "phone": "0971234567",
@@ -188,9 +187,7 @@
     },
     {
       "id": 3,
-      "location": [{
-        "latitude": 51.00818, "longitude": 7.0387
-      }
+      "location": [{ "latitude": 49.42, "longitude": 32.0621 }
       ],
       "name": "Інвітро",
       "phone": "0971234567",
